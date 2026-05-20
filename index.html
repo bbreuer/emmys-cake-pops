@@ -1,0 +1,3125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Emmy's Sweet Treats — hand-dipped cake pops in Enfield, CT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Caveat:wght@400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:        #F4ECDC;
+    --paper-2:      #ECE0C7;
+    --paper-3:      #E4D4B4;
+    --ink:          #3A271A;
+    --ink-soft:     #5C3F2A;
+    --ink-faint:    #8A6B4F;
+    --terracotta:   #B5532A;
+    --terracotta-d: #8F3F1F;
+    --cherry:       #9C2E26;
+    --butter:       #E9B958;
+    --butter-deep:  #C68A2A;
+    --sage:         #8FA483;
+    --sage-deep:    #5E7253;
+    --rose:         #D49381;
+    --pink:         #F2C1CB;
+    --pink-deep:    #DE8AA0;
+    --mint:         #B6D7C5;
+    --shadow:       0 1px 0 rgba(58,39,26,.05), 0 8px 22px -10px rgba(58,39,26,.20);
+    --shadow-lift:  0 2px 0 rgba(58,39,26,.06), 0 22px 40px -18px rgba(58,39,26,.28);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Newsreader', 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 600px at 12% -10%, #F8F0DE 0%, transparent 60%),
+      radial-gradient(900px 700px at 100% 20%, #EAD9B6 0%, transparent 55%),
+      radial-gradient(700px 500px at 50% 110%, #E1CDA4 0%, transparent 55%),
+      var(--paper);
+    background-attachment: fixed;
+    line-height: 1.55;
+    font-size: 17px;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: .35;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.36 0 0 0 0 0.25 0 0 0 0 0.15 0 0 0 0.22 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  body::after {
+    content:"";
+    position: fixed; inset:0;
+    pointer-events:none; z-index:1;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 50%, transparent 55%, rgba(58,39,26,.10) 100%);
+  }
+
+  main, header, footer, section, nav { position: relative; z-index: 2; }
+
+  /* ---------- TYPOGRAPHY ---------- */
+  .display {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 80, "wght" 500;
+    letter-spacing: -0.02em;
+    line-height: 0.92;
+  }
+  .script {
+    font-family: 'Caveat', cursive;
+    color: var(--terracotta);
+    font-weight: 600;
+  }
+  .eyebrow {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 11px;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- LAYOUT ---------- */
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+  @media (max-width: 720px) { .wrap { padding: 0 22px; } }
+
+  .dotted-rule {
+    height: 14px;
+    background-image: radial-gradient(circle, var(--ink-faint) 1px, transparent 1.5px);
+    background-size: 12px 14px;
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+    opacity: .55;
+  }
+
+  /* ---------- NAV ---------- */
+  nav.top {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 26px 40px;
+    max-width: 1240px; margin: 0 auto;
+  }
+  @media (max-width: 720px) { nav.top { padding: 22px; } }
+
+  nav.top .logo {
+    display: flex; align-items: center; gap: 12px;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--ink);
+  }
+  nav.top .logo .mark {
+    width: 38px; height: 38px;
+    display: grid; place-items: center;
+    border: 1.5px solid var(--ink);
+    border-radius: 50%;
+    background: var(--paper);
+  }
+  nav.top ul {
+    list-style: none; display: flex; gap: 34px; padding: 0; margin: 0;
+  }
+  nav.top a {
+    color: var(--ink); text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    position: relative;
+  }
+  nav.top a::after {
+    content:""; position: absolute; left: 0; right: 0; bottom: -6px;
+    height: 1px; background: var(--ink); transform: scaleX(0); transform-origin: left;
+    transition: transform .5s cubic-bezier(.2,.7,.2,1);
+  }
+  nav.top a:hover::after { transform: scaleX(1); }
+
+  nav.top .order-btn {
+    border: 1.5px solid var(--ink);
+    padding: 10px 18px 9px;
+    border-radius: 999px;
+    background: var(--paper);
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    box-shadow: 2px 2px 0 var(--ink);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  nav.top .order-btn:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--ink); }
+  nav.top .order-btn::after { display:none; }
+
+  @media (max-width: 820px) { nav.top ul { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    padding: 30px 0 60px;
+    position: relative;
+  }
+  .hero .grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  @media (max-width: 920px) { .hero .grid { grid-template-columns: 1fr; gap: 30px; } }
+
+  .hero-meta {
+    display: flex; gap: 22px; align-items: center; margin-bottom: 28px;
+    color: var(--ink-faint);
+    flex-wrap: wrap;
+  }
+  .hero-meta span { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; font-family: 'Fraunces', serif; }
+  .hero-meta .stamp {
+    border: 1px dashed var(--ink-faint);
+    padding: 6px 12px;
+    border-radius: 4px;
+    transform: rotate(-3deg);
+    color: var(--terracotta);
+  }
+  .hero-meta .place {
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .hero-meta .place::before {
+    content:""; width:6px; height:6px; border-radius:50%; background: var(--terracotta);
+  }
+
+  h1.hero-title {
+    font-size: clamp(54px, 8.8vw, 124px);
+    margin: 0 0 18px;
+    color: var(--ink);
+  }
+  h1.hero-title .row { display: block; }
+  h1.hero-title .row em {
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 400;
+    color: var(--terracotta);
+  }
+  h1.hero-title .swash {
+    font-family: 'Caveat', cursive;
+    color: var(--sage-deep);
+    font-size: 0.42em;
+    font-weight: 600;
+    letter-spacing: 0;
+    display: inline-block;
+    transform: rotate(-6deg) translateY(-0.3em);
+    margin: 0 0.3em 0 0.1em;
+    white-space: nowrap;
+  }
+
+  .hero-blurb {
+    max-width: 470px;
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0 0 36px;
+  }
+  .hero-blurb .drop {
+    float: left;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 700, "SOFT" 80;
+    font-size: 56px;
+    line-height: 0.85;
+    padding: 6px 8px 0 0;
+    color: var(--terracotta);
+  }
+
+  .hero-cta {
+    display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 16px 26px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 var(--terracotta);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .btn-primary:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--terracotta); }
+  .btn-primary svg { transition: transform .3s ease; }
+  .btn-primary:hover svg { transform: translateX(4px); }
+
+  .hero-note {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: var(--ink-soft);
+    display: inline-flex; align-items: center; gap: 8px;
+    transform: rotate(-2deg);
+  }
+  .hero-note svg { width: 30px; height: 30px; }
+
+  /* ---------- HERO ART (cake pop bouquet) ---------- */
+  .hero-art {
+    position: relative;
+    aspect-ratio: 1 / 1.15;
+  }
+
+  .bouquet {
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+  }
+  .bouquet svg { width: 100%; height: 100%; }
+
+  .sticker {
+    position: absolute;
+    width: 124px; height: 124px;
+    border-radius: 50%;
+    background: var(--butter);
+    color: var(--ink);
+    display: grid; place-items: center;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.25;
+    transform: rotate(-12deg);
+    box-shadow: 0 10px 20px -10px rgba(58,39,26,.35);
+    bottom: 4%;
+    left: -2%;
+    z-index: 3;
+    border: 1.5px dashed var(--ink);
+  }
+  .sticker .num { display:block; font-size: 22px; letter-spacing: 0; margin-top: 4px; }
+
+  .price-tag {
+    position: absolute;
+    top: 6%;
+    right: 2%;
+    background: #FBF7EE;
+    color: var(--ink);
+    padding: 14px 18px;
+    transform: rotate(6deg);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(58,39,26,.2);
+    z-index: 3;
+  }
+  .price-tag::before {
+    content:""; position:absolute; top:50%; left:-7px; width:14px; height:14px;
+    background: var(--paper); border-radius:50%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 0 1px rgba(58,39,26,.2);
+  }
+  .price-tag .small {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: block;
+  }
+  .price-tag .big {
+    font-family: 'Caveat', cursive;
+    color: var(--terracotta);
+    font-size: 28px;
+    line-height: 1;
+    margin-top: 2px;
+  }
+
+  /* ---------- MARQUEE ---------- */
+  .marquee {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    overflow: hidden;
+    background: var(--paper-2);
+    margin-top: 30px;
+  }
+  .marquee-track {
+    display: flex;
+    gap: 60px;
+    padding: 16px 0;
+    animation: scroll 38s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee span {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-soft);
+    display: inline-flex; align-items: center; gap: 60px;
+  }
+  .marquee .leaf { color: var(--sage-deep); font-size: 22px; }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 110px 0; }
+  @media (max-width: 720px) { section { padding: 70px 0; } }
+
+  .section-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 48px;
+  }
+  .section-head h2 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 500, "SOFT" 80;
+    font-size: clamp(40px, 6vw, 78px);
+    line-height: 0.95;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .section-head h2 em {
+    font-style: italic;
+    color: var(--terracotta);
+    font-variation-settings: "opsz" 144, "wght" 400, "SOFT" 100;
+  }
+  .section-head .meta {
+    text-align: right;
+    color: var(--ink-faint);
+  }
+  .section-head .meta .script { color: var(--sage-deep); font-size: 22px; display: block; }
+  @media (max-width: 720px) {
+    .section-head { grid-template-columns: 1fr; }
+    .section-head .meta { text-align: left; }
+  }
+
+  /* ---------- FLAVOR CARDS ---------- */
+  .bakes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  @media (max-width: 920px) { .bakes-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .bakes-grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: #FBF6E9;
+    border: 1px solid rgba(58,39,26,.18);
+    padding: 22px;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease;
+  }
+  .card:hover { transform: translateY(-6px) rotate(-0.4deg); box-shadow: var(--shadow-lift); }
+  .card .illo {
+    aspect-ratio: 4/3.2;
+    border-radius: 4px;
+    display: grid; place-items: center;
+    margin-bottom: 18px;
+    overflow: hidden;
+    position: relative;
+  }
+  .card .illo svg { width: 100%; height: 100%; }
+  .card .price {
+    position: absolute;
+    top: 32px; right: 32px;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 700;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.06em;
+    transform: rotate(4deg);
+    z-index: 2;
+  }
+  .card h3 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 60, "wght" 600, "SOFT" 60;
+    font-size: 26px;
+    margin: 4px 0 6px;
+    line-height: 1.1;
+  }
+  .card h3 em { font-style: italic; color: var(--terracotta); font-weight: 400; }
+  .card p { margin: 0 0 14px; color: var(--ink-soft); font-size: 15px; line-height: 1.55; }
+  .card .tags {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-top: 6px;
+    padding-top: 14px;
+    border-top: 1px dotted rgba(58,39,26,.25);
+  }
+  .card .tag {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .card .tag::before { content: "·"; margin-right: 8px; color: var(--terracotta); }
+  .card .tag:first-child::before { display: none; }
+
+  .card .corner {
+    position: absolute;
+    top: -10px; left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 78px; height: 18px;
+    background: rgba(232, 197, 110, 0.6);
+    box-shadow: 0 4px 8px -3px rgba(58,39,26,.25);
+  }
+
+  /* ---------- STORY ---------- */
+  .story {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+  }
+  @media (max-width: 920px) { .story { grid-template-columns: 1fr; gap: 50px; } }
+
+  .story-photo {
+    position: relative;
+  }
+  .story-photo .frame {
+    background: #FBF7EE;
+    padding: 22px 22px 70px;
+    box-shadow: var(--shadow-lift);
+    transform: rotate(-2.5deg);
+    position: relative;
+  }
+  .story-photo .frame .ph {
+    aspect-ratio: 3/4;
+    border-radius: 1px;
+    position: relative;
+    overflow: hidden;
+  }
+  .story-photo .frame .ph svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .story-photo .frame .cap {
+    position: absolute; bottom: 22px; left: 0; right: 0;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    color: var(--ink-soft);
+  }
+  .story-photo .tape {
+    position: absolute;
+    top: -14px; left: 50%; transform: translateX(-50%) rotate(-3deg);
+    background: rgba(180, 78, 36, 0.45);
+    width: 110px; height: 26px;
+    box-shadow: 0 4px 8px -3px rgba(58,39,26,.25);
+  }
+  .story-photo .stamp-2 {
+    position: absolute;
+    right: -10px; bottom: 30px;
+    width: 130px; height: 130px;
+    border-radius: 50%;
+    border: 2px solid var(--cherry);
+    color: var(--cherry);
+    display: grid; place-items: center;
+    transform: rotate(12deg);
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-align: center;
+    line-height: 1.2;
+    background: rgba(244, 236, 220, 0.4);
+  }
+
+  .story-text .eyebrow { margin-bottom: 18px; display: inline-block; }
+  .story-text h2 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 400, "SOFT" 100;
+    font-size: clamp(40px, 5.5vw, 72px);
+    line-height: 1;
+    margin: 0 0 26px;
+    letter-spacing: -0.015em;
+  }
+  .story-text h2 em { font-style: italic; color: var(--terracotta); }
+  .story-text p {
+    font-size: 18px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    margin: 0 0 20px;
+  }
+  .story-text .sig {
+    font-family: 'Caveat', cursive;
+    font-size: 38px;
+    color: var(--terracotta);
+    margin-top: 14px;
+    display: inline-block;
+    transform: rotate(-3deg);
+  }
+  .story-text .sig-sub {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  /* ---------- HOW ---------- */
+  .how {
+    background: linear-gradient(180deg, transparent, var(--paper-2) 18%, var(--paper-2) 82%, transparent);
+    border-top: 1px dashed rgba(58,39,26,.25);
+    border-bottom: 1px dashed rgba(58,39,26,.25);
+  }
+  .how .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+    margin-top: 30px;
+  }
+  @media (max-width: 920px) { .how .steps { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .how .steps { grid-template-columns: 1fr; gap: 36px; } }
+  .step {
+    position: relative;
+    padding-top: 30px;
+  }
+  .step .num {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 300, "SOFT" 100;
+    font-size: 74px;
+    line-height: 1;
+    color: var(--terracotta);
+    font-style: italic;
+    margin-bottom: 14px;
+  }
+  .step h4 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 60, "wght" 600, "SOFT" 60;
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+  .step p { color: var(--ink-soft); margin: 0; font-size: 15px; line-height: 1.6; }
+  .step .ornament {
+    position: absolute; top: 0; right: 0;
+    font-family: 'Caveat', cursive;
+    color: var(--sage-deep);
+    font-size: 22px;
+    transform: rotate(8deg);
+    opacity: .8;
+  }
+
+  /* ---------- OCCASIONS ---------- */
+  .occasions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 920px) { .occasions-grid { grid-template-columns: repeat(2, 1fr); } }
+  .occasion {
+    background: #FBF6E9;
+    border: 1px solid rgba(58,39,26,.18);
+    border-radius: 6px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform .3s ease;
+  }
+  .occasion:hover { transform: translateY(-4px); }
+  .occasion .icon {
+    width: 56px; height: 56px;
+    margin: 0 auto 14px;
+    display: grid; place-items: center;
+    border: 1.5px solid var(--ink);
+    border-radius: 50%;
+    background: var(--paper);
+  }
+  .occasion h4 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 60, "wght" 600, "SOFT" 60;
+    font-size: 18px;
+    margin: 0 0 6px;
+  }
+  .occasion p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ---------- WHISPERS ---------- */
+  .whispers .quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  @media (max-width: 920px) { .whispers .quotes { grid-template-columns: 1fr; } }
+  .quote {
+    background: #FBF7EE;
+    padding: 30px 28px;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  .quote:nth-child(1) { transform: rotate(-1.4deg); }
+  .quote:nth-child(2) { transform: rotate(0.8deg); margin-top: 30px; }
+  .quote:nth-child(3) { transform: rotate(-0.6deg); }
+  .quote .mark {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 700;
+    font-size: 60px;
+    color: var(--terracotta);
+    line-height: 0;
+    position: absolute; top: 32px; left: 22px;
+    opacity: .35;
+  }
+  .quote p {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 60, "wght" 400, "SOFT" 60;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 24px 0 18px;
+    color: var(--ink);
+  }
+  .quote .by {
+    display: flex; align-items: center; gap: 10px;
+    color: var(--ink-faint);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+  }
+  .quote .by::before { content:""; width: 20px; height: 1px; background: var(--ink-faint); }
+  .quote .tape {
+    position: absolute;
+    background: rgba(232, 197, 110, 0.55);
+    width: 90px; height: 22px;
+    top: -10px; left: 30px;
+    box-shadow: 0 4px 8px -3px rgba(58,39,26,.25);
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-wrap {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 12px;
+    padding: 80px 60px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  @media (max-width: 720px) { .cta-wrap { padding: 60px 28px; } }
+  .cta-wrap::before {
+    content:""; position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(244, 236, 220, .07) 1px, transparent 1.5px);
+    background-size: 22px 22px;
+    opacity: .8;
+  }
+  .cta-wrap h2 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 400, "SOFT" 100;
+    font-size: clamp(42px, 7vw, 96px);
+    line-height: 0.95;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+    color: var(--paper);
+    position: relative;
+  }
+  .cta-wrap h2 em { font-style: italic; color: var(--butter); }
+  .cta-wrap p {
+    font-size: 18px;
+    color: rgba(244, 236, 220, .75);
+    max-width: 540px;
+    margin: 0 auto 36px;
+    position: relative;
+  }
+  .cta-wrap .btn-primary {
+    background: var(--butter);
+    color: var(--ink);
+    box-shadow: 4px 4px 0 var(--terracotta);
+    position: relative;
+  }
+  .cta-wrap .btn-primary:hover { box-shadow: 6px 6px 0 var(--terracotta); }
+  .cta-wrap .sprig {
+    position: absolute;
+    color: var(--sage);
+    opacity: .35;
+  }
+  .cta-wrap .sprig.tl { top: 26px; left: 28px; transform: rotate(-12deg); }
+  .cta-wrap .sprig.br { bottom: 26px; right: 28px; transform: rotate(168deg); }
+
+  /* ---------- FOOTER ---------- */
+  footer { padding: 70px 0 40px; }
+  footer .row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 820px) { footer .row { grid-template-columns: 1fr 1fr; } }
+  footer h5 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 11px;
+    color: var(--ink);
+    margin: 0 0 16px;
+  }
+  footer ul { list-style: none; padding: 0; margin: 0; }
+  footer li { margin-bottom: 8px; }
+  footer a { color: var(--ink-soft); text-decoration: none; font-size: 15px; }
+  footer a:hover { color: var(--terracotta); }
+  footer .brand h4 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 400, "SOFT" 100;
+    font-style: italic;
+    font-size: 36px;
+    margin: 0 0 10px;
+    color: var(--terracotta);
+  }
+  footer .brand p { color: var(--ink-soft); font-size: 15px; max-width: 320px; }
+  footer .colophon {
+    border-top: 1px solid rgba(58,39,26,.2);
+    padding-top: 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  @media (max-width: 620px) { footer .colophon { flex-direction: column; gap: 14px; text-align: center; } }
+
+  /* ---------- ANIMATIONS ---------- */
+  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
+  .fade-in.in { opacity: 1; transform: none; }
+
+  .float { animation: floaty 6s ease-in-out infinite; }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50%      { transform: translateY(-6px) rotate(1.5deg); }
+  }
+
+  /* ---------- MOBILE MENU ---------- */
+  .menu-toggle {
+    display: none;
+    width: 42px; height: 42px;
+    background: var(--paper); border: 1.5px solid var(--ink);
+    border-radius: 50%;
+    align-items: center; justify-content: center;
+    cursor: pointer; padding: 0;
+    box-shadow: 2px 2px 0 var(--ink);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .menu-toggle:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--ink); }
+  .menu-toggle .bars { width: 16px; height: 12px; position: relative; }
+  .menu-toggle .bars span {
+    position: absolute; left: 0; right: 0; height: 1.5px;
+    background: var(--ink); border-radius: 1px;
+    transition: transform .3s ease, top .3s ease, opacity .2s ease;
+  }
+  .menu-toggle .bars span:nth-child(1) { top: 0; }
+  .menu-toggle .bars span:nth-child(2) { top: 5.5px; }
+  .menu-toggle .bars span:nth-child(3) { top: 11px; }
+  .menu-toggle[aria-expanded="true"] .bars span:nth-child(1) { top: 5.5px; transform: rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] .bars span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] .bars span:nth-child(3) { top: 5.5px; transform: rotate(-45deg); }
+  @media (max-width: 820px) {
+    .menu-toggle { display: inline-flex; }
+    nav.top .order-btn { display: none; }
+  }
+
+  .mobile-menu {
+    position: fixed; inset: 0;
+    background: var(--paper);
+    z-index: 99;
+    padding: 96px 30px 40px;
+    transform: translateY(-100%);
+    transition: transform .55s cubic-bezier(.65,0,.35,1);
+    display: flex; flex-direction: column;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .mobile-menu.open { transform: translateY(0); pointer-events: auto; }
+  .mobile-menu::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.36 0 0 0 0 0.25 0 0 0 0 0.15 0 0 0 0.22 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity: .3; mix-blend-mode: multiply;
+  }
+  .mobile-menu .mm-deco {
+    position: absolute; right: -40px; top: 120px;
+    opacity: .25; pointer-events: none;
+    transform: rotate(-12deg);
+  }
+  .mobile-menu ul {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 18px;
+    position: relative;
+  }
+  .mobile-menu a {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 400, "SOFT" 100;
+    font-style: italic;
+    font-size: 44px;
+    color: var(--ink);
+    text-decoration: none;
+    line-height: 1;
+    transition: color .2s ease, transform .2s ease;
+    display: inline-block;
+  }
+  .mobile-menu a:hover, .mobile-menu a:active { color: var(--terracotta); transform: translateX(6px); }
+  .mobile-menu .mm-cta {
+    margin-top: 36px;
+    align-self: flex-start;
+    position: relative;
+  }
+  .mobile-menu .mm-foot {
+    margin-top: auto;
+    position: relative;
+    font-family: 'Caveat', cursive;
+    color: var(--ink-faint);
+    font-size: 22px;
+  }
+
+  /* ---------- BUILDER ---------- */
+  .builder {
+    background: linear-gradient(180deg, transparent, var(--paper-2) 8%, var(--paper-2) 92%, transparent);
+    border-top: 1px dashed rgba(58,39,26,.25);
+    border-bottom: 1px dashed rgba(58,39,26,.25);
+    position: relative;
+  }
+  .builder-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+  @media (max-width: 920px) { .builder-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  .builder-controls {
+    background: #FBF6E9;
+    border: 1px solid rgba(58,39,26,.18);
+    border-radius: 8px;
+    padding: 38px;
+    box-shadow: var(--shadow-lift);
+    position: relative;
+  }
+  @media (max-width: 620px) { .builder-controls { padding: 26px 22px; } }
+  .builder-controls::before {
+    content: "";
+    position: absolute;
+    top: -14px; left: 38px;
+    width: 110px; height: 24px;
+    background: rgba(232, 197, 110, 0.55);
+    transform: rotate(-1.5deg);
+    box-shadow: 0 4px 8px -3px rgba(58,39,26,.25);
+  }
+  .builder-controls::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; right: 28px;
+    width: 80px; height: 20px;
+    background: rgba(180, 78, 36, 0.4);
+    transform: rotate(2deg);
+    box-shadow: 0 4px 8px -3px rgba(58,39,26,.2);
+  }
+
+  .field { margin-bottom: 28px; }
+  .field-label {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 14px;
+    gap: 18px;
+  }
+  .field-label .name {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 11px;
+    color: var(--ink);
+  }
+  .field-label .name .step-num {
+    color: var(--terracotta);
+    font-style: italic;
+    margin-right: 8px;
+    font-variation-settings: "opsz" 144, "wght" 400, "SOFT" 100;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 18px;
+    display: inline-block;
+    transform: translateY(2px);
+  }
+  .field-label .hint {
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    color: var(--ink-faint);
+    text-align: right;
+    line-height: 1.1;
+  }
+
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip {
+    background: var(--paper);
+    border: 1.5px solid rgba(58,39,26,.25);
+    color: var(--ink);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease, color .2s ease;
+    user-select: none;
+    position: relative;
+    letter-spacing: 0.02em;
+  }
+  .chip:hover { transform: translateY(-1px); border-color: var(--ink); background: var(--paper-2); }
+  .chip[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+    box-shadow: 2px 2px 0 var(--terracotta);
+  }
+  .chip[aria-pressed="true"]::after {
+    content: "✓"; margin-left: 8px; color: var(--butter);
+    font-weight: bold;
+  }
+  .chip.flavor-chip {
+    padding-left: 36px;
+  }
+  .chip.flavor-chip .dot {
+    position: absolute;
+    left: 10px; top: 50%; transform: translateY(-50%);
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--swatch, var(--terracotta));
+    box-shadow: inset -2px -2px 3px rgba(0,0,0,.2), inset 2px 2px 3px rgba(255,255,255,.4);
+    border: 1px solid rgba(58,39,26,.2);
+  }
+  .chip.flavor-chip .dot::after {
+    content:""; position:absolute; top:14%; left:18%;
+    width:30%; height:30%;
+    border-radius:50%;
+    background: rgba(255,255,255,.6);
+  }
+
+  .stepper {
+    display: inline-flex; align-items: center;
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    background: var(--paper);
+    overflow: hidden;
+    box-shadow: 2px 2px 0 var(--terracotta);
+  }
+  .stepper button {
+    width: 46px; height: 46px;
+    background: transparent; border: none;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    font-size: 22px;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background .15s ease;
+  }
+  .stepper button:hover { background: var(--paper-2); }
+  .stepper button:active { background: var(--paper-3); }
+  .stepper button:disabled { opacity: .3; cursor: not-allowed; }
+  .stepper .count {
+    min-width: 84px;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 600;
+    font-size: 26px;
+    color: var(--ink);
+    padding: 4px 8px 2px;
+    line-height: 1;
+  }
+  .stepper .count small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 500;
+    margin-top: 1px;
+    font-variation-settings: "opsz" 14, "wght" 500;
+  }
+
+  .swatches { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .swatch {
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 10px -3px rgba(58,39,26,.3),
+                inset -4px -4px 7px rgba(0,0,0,.18),
+                inset 6px 6px 9px rgba(255,255,255,.5);
+    transition: transform .25s cubic-bezier(.2,.7,.2,1);
+  }
+  .swatch:hover { transform: translateY(-3px) scale(1.05); }
+  .swatch[aria-pressed="true"] {
+    border-color: var(--ink);
+    transform: translateY(-3px) scale(1.08);
+  }
+  .swatch[aria-pressed="true"]::after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border: 1.5px dashed var(--ink);
+    border-radius: 50%;
+    animation: spin 16s linear infinite;
+  }
+  .swatch .label {
+    position: absolute; top: calc(100% + 6px); left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Caveat', cursive;
+    color: var(--ink-faint);
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity .2s ease;
+    pointer-events: none;
+  }
+  .swatch:hover .label, .swatch[aria-pressed="true"] .label { opacity: 1; color: var(--ink); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .input-text, textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px dashed rgba(58,39,26,.4);
+    padding: 12px 0 10px;
+    font-family: 'Newsreader', serif;
+    font-size: 17px;
+    color: var(--ink);
+    outline: none;
+    resize: none;
+  }
+  .input-text:focus, textarea:focus { border-bottom-color: var(--terracotta); border-bottom-style: solid; }
+  .input-text::placeholder, textarea::placeholder { color: var(--ink-faint); font-style: italic; }
+  textarea { min-height: 80px; }
+  .field-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 26px;
+  }
+  @media (max-width: 620px) { .field-grid { grid-template-columns: 1fr; gap: 18px; } }
+
+  .estimate {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 28px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 8px;
+    margin-top: 28px;
+    position: relative;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .estimate::before {
+    content: ""; position: absolute; inset: 0; border-radius: 8px;
+    background-image: radial-gradient(circle, rgba(244,236,220,.06) 1px, transparent 1.4px);
+    background-size: 18px 18px;
+    opacity: .6;
+    pointer-events: none;
+  }
+  .estimate .est-text { position: relative; min-width: 0; flex: 1; }
+  .estimate .lbl {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 11px;
+    color: rgba(244,236,220,.7);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .estimate .val {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "wght" 500, "SOFT" 80;
+    font-size: 38px;
+    color: var(--butter);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .estimate .per {
+    font-family: 'Caveat', cursive;
+    color: rgba(244,236,220,.7);
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .estimate .send {
+    background: var(--butter);
+    color: var(--ink);
+    padding: 16px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--terracotta);
+    transition: transform .25s ease, box-shadow .25s ease;
+    display: inline-flex; align-items: center; gap: 10px;
+    position: relative;
+    white-space: nowrap;
+  }
+  .estimate .send:hover { transform: translate(-2px,-2px); box-shadow: 5px 5px 0 var(--terracotta); }
+  .estimate .send svg { transition: transform .3s ease; }
+  .estimate .send:hover svg { transform: translateX(4px); }
+  .estimate .note {
+    margin-top: 8px;
+    font-family: 'Caveat', cursive;
+    color: rgba(244,236,220,.7);
+    font-size: 16px;
+  }
+
+  .builder-preview {
+    position: sticky;
+    top: 30px;
+  }
+  @media (max-width: 920px) { .builder-preview { position: static; } }
+  .builder-preview .frame {
+    background: #FBF7EE;
+    border-radius: 6px;
+    padding: 28px 28px 14px;
+    box-shadow: var(--shadow-lift);
+    position: relative;
+    transform: rotate(-0.8deg);
+  }
+  .builder-preview .frame::before {
+    content: "";
+    position: absolute;
+    top: -16px; left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 140px; height: 26px;
+    background: rgba(180, 78, 36, 0.45);
+    box-shadow: 0 4px 8px -3px rgba(58,39,26,.25);
+  }
+  .builder-preview .preview-area {
+    aspect-ratio: 1/1.05;
+    display: grid; place-items: center;
+    position: relative;
+  }
+  .builder-preview .preview-area svg { width: 100%; height: 100%; }
+  .builder-preview .meta {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 0 4px;
+    border-top: 1px dotted rgba(58,39,26,.25);
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .builder-preview .meta strong { color: var(--ink); font-weight: 600; }
+  .preview-pop { transition: transform .5s cubic-bezier(.2,.7,.2,1); transform-origin: center bottom; }
+  .preview-pop.sway-1 { animation: sway1 5.5s ease-in-out infinite; }
+  .preview-pop.sway-2 { animation: sway2 6.2s ease-in-out infinite; }
+  .preview-pop.sway-3 { animation: sway3 5.8s ease-in-out infinite; }
+  @keyframes sway1 { 0%,100% { transform: rotate(0); } 50% { transform: rotate(2deg); } }
+  @keyframes sway2 { 0%,100% { transform: rotate(0); } 50% { transform: rotate(-1.7deg); } }
+  @keyframes sway3 { 0%,100% { transform: rotate(0); } 50% { transform: rotate(1.3deg); } }
+
+  /* ---------- FAQ ---------- */
+  .faq-wrap { max-width: 820px; margin: 0 auto; }
+  details.faq-item {
+    border-bottom: 1px dashed rgba(58,39,26,.3);
+    padding: 22px 0;
+    transition: padding .2s ease;
+  }
+  details.faq-item:first-child { border-top: 1px dashed rgba(58,39,26,.3); }
+  details.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex; align-items: center; gap: 16px;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 60, "wght" 500, "SOFT" 60;
+    font-size: 22px;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item summary::marker { display: none; content: ""; }
+  details.faq-item summary .q-num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--terracotta);
+    font-size: 22px;
+    font-variation-settings: "opsz" 60, "wght" 400, "SOFT" 100;
+    display: inline-block;
+    min-width: 34px;
+    flex-shrink: 0;
+  }
+  details.faq-item summary .q-text { flex: 1; }
+  details.faq-item summary .toggle {
+    width: 38px; height: 38px;
+    border: 1.5px solid var(--ink);
+    border-radius: 50%;
+    background: var(--paper);
+    display: grid; place-items: center;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 400;
+    font-size: 22px;
+    color: var(--ink);
+    flex-shrink: 0;
+    transition: transform .35s cubic-bezier(.2,.7,.2,1), background .2s ease, color .2s ease, border-color .2s ease;
+    line-height: 1;
+  }
+  details.faq-item:hover summary .toggle { background: var(--butter); }
+  details.faq-item[open] summary .toggle {
+    transform: rotate(45deg);
+    background: var(--terracotta);
+    color: var(--paper);
+    border-color: var(--terracotta);
+  }
+  details.faq-item[open] summary .q-text { color: var(--terracotta); }
+  details.faq-item .answer {
+    padding: 16px 0 6px 50px;
+    color: var(--ink-soft);
+    font-size: 17px;
+    line-height: 1.75;
+    max-width: 640px;
+  }
+  details.faq-item .answer p { margin: 0 0 10px; }
+  details.faq-item .answer em { color: var(--terracotta); font-style: italic; }
+  @media (max-width: 620px) {
+    details.faq-item summary { font-size: 18px; gap: 10px; }
+    details.faq-item summary .q-num { font-size: 18px; min-width: 26px; }
+    details.faq-item .answer { padding-left: 36px; font-size: 16px; }
+  }
+
+  /* ---------- MINI BAR ---------- */
+  .mini-bar {
+    position: fixed;
+    bottom: 18px; left: 50%;
+    transform: translateX(-50%) translateY(160%);
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 999px;
+    padding: 10px 10px 10px 22px;
+    display: flex; align-items: center; gap: 16px;
+    box-shadow: 0 14px 34px -10px rgba(0,0,0,.4), 0 0 0 2px rgba(244,236,220,.08);
+    z-index: 50;
+    transition: transform .55s cubic-bezier(.2,.7,.2,1);
+    max-width: calc(100vw - 30px);
+  }
+  .mini-bar.show { transform: translateX(-50%) translateY(0); }
+  .mini-bar .b-summary {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 500;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mini-bar .b-summary strong {
+    color: var(--butter);
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 60, "wght" 600;
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  .mini-bar .b-summary .sep {
+    margin: 0 8px; opacity: .4;
+  }
+  .mini-bar a {
+    background: var(--butter);
+    color: var(--ink);
+    padding: 10px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background .2s ease;
+  }
+  .mini-bar a:hover { background: #F5D38B; }
+  @media (max-width: 620px) {
+    .mini-bar { padding: 8px 8px 8px 16px; gap: 10px; }
+    .mini-bar .b-summary { font-size: 11px; }
+    .mini-bar .b-summary strong { font-size: 15px; }
+    .mini-bar a { padding: 8px 14px; font-size: 11px; }
+  }
+
+  /* ---------- CARDS — selectable ---------- */
+  .card { cursor: pointer; }
+  .card[aria-pressed="true"] {
+    background: #FFE9C6;
+    box-shadow: 0 0 0 2px var(--terracotta), var(--shadow-lift);
+    transform: translateY(-4px) rotate(-0.4deg);
+  }
+  .card .add-pill {
+    margin-top: 12px;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--paper);
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    border-radius: 999px;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14, "wght" 600;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    transition: background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .card[aria-pressed="true"] .add-pill {
+    background: var(--terracotta); color: var(--paper); border-color: var(--terracotta);
+  }
+  .card[aria-pressed="true"] .add-pill::before { content: "✓ "; }
+  .card[aria-pressed="false"] .add-pill::before { content: "+ "; }
+
+  /* ---------- SPRINKLES ---------- */
+  .sprinkle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    width: 10px; height: 3.5px;
+    border-radius: 2px;
+    will-change: transform, opacity;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .preview-pop, .float, .swatch[aria-pressed="true"]::after { animation: none !important; }
+    .fade-in { opacity: 1; transform: none; transition: none; }
+  }
+
+  ::selection { background: var(--butter); color: var(--ink); }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- spherical sheen gradient (reusable for any color via filter) -->
+    <radialGradient id="sphereSheen" cx="35%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25"/>
+    </radialGradient>
+    <radialGradient id="popHL" cx="35%" cy="30%" r="22%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- stick -->
+    <linearGradient id="stick" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E4D4B4"/>
+      <stop offset="50%" stop-color="#FBF7EE"/>
+      <stop offset="100%" stop-color="#C9B58A"/>
+    </linearGradient>
+    <pattern id="cross-hatch" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0,6 L6,0" stroke="#3A271A" stroke-width="0.5" opacity="0.18"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header>
+  <nav class="top">
+    <a href="#" class="logo">
+      <span class="mark" aria-hidden="true">
+        <!-- mini cake pop logo mark -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <line x1="12" y1="13" x2="12" y2="22" stroke="#3A271A" stroke-width="1.4" stroke-linecap="round"/>
+          <circle cx="12" cy="9" r="6" fill="#B5532A" stroke="#3A271A" stroke-width="1.2"/>
+          <circle cx="10" cy="7" r="1" fill="#FBF7EE"/>
+          <circle cx="13" cy="11" r=".8" fill="#FBF7EE"/>
+          <circle cx="14" cy="6.5" r=".8" fill="#FBF7EE"/>
+        </svg>
+      </span>
+      Emmy's <span style="opacity:.5">·</span> Enfield, CT
+    </a>
+    <ul>
+      <li><a href="#flavors">Flavors</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#occasions">Occasions</a></li>
+      <li><a href="#how">How to Order</a></li>
+    </ul>
+    <a href="#order" class="order-btn">Place an Order</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="bars"><span></span><span></span><span></span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <svg class="mm-deco" width="280" height="280" viewBox="0 0 280 280" fill="none" aria-hidden="true">
+      <line x1="140" y1="160" x2="140" y2="270" stroke="#3A271A" stroke-width="2"/>
+      <circle cx="140" cy="130" r="80" fill="#B5532A"/>
+      <circle cx="115" cy="105" r="9" fill="#FBF7EE"/>
+      <circle cx="160" cy="135" r="6" fill="#FBF7EE"/>
+      <circle cx="170" cy="100" r="5" fill="#FBF7EE"/>
+      <circle cx="125" cy="155" r="5" fill="#FBF7EE"/>
+    </svg>
+    <ul>
+      <li><a href="#flavors" data-mm>Flavors</a></li>
+      <li><a href="#story" data-mm>Our Story</a></li>
+      <li><a href="#occasions" data-mm>Occasions</a></li>
+      <li><a href="#how" data-mm>How to Order</a></li>
+      <li><a href="#faq" data-mm>Questions</a></li>
+    </ul>
+    <a href="#order" data-mm class="btn-primary mm-cta">
+      Build a bouquet
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
+        <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <div class="mm-foot">made with butter &amp; sprinkles · Enfield, CT</div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="grid">
+      <div class="hero-text">
+        <div class="hero-meta fade-in">
+          <span class="place">Enfield, Connecticut</span>
+          <span style="opacity:.4">·</span>
+          <span>Custom orders</span>
+          <span class="stamp">Hand-dipped daily</span>
+        </div>
+
+        <h1 class="display hero-title fade-in">
+          <span class="row">Little</span>
+          <span class="row">cakes,<em> on</em></span>
+          <span class="row"><span class="swash">a tiny</span>stick.</span>
+          <span class="row"><em>Big</em> on love.</span>
+        </h1>
+
+        <p class="hero-blurb fade-in">
+          <span class="drop">E</span>mmy hand-rolls, dips, and decorates every cake pop in her Enfield kitchen &mdash; one tray at a time, never a mold in sight. Bouquets for birthdays, favors for weddings, gender reveals, baby showers, and the occasional "just because" Tuesday.
+        </p>
+
+        <div class="hero-cta fade-in">
+          <a href="#flavors" class="btn-primary">
+            See the flavor menu
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
+              <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <span class="hero-note">
+            <svg viewBox="0 0 30 30" fill="none">
+              <path d="M3 18 C 6 8, 18 4, 27 9" stroke="#5C3F2A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <path d="M27 9 L 22 7 M 27 9 L 25 14" stroke="#5C3F2A" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            min. 12 pops · 1 wk notice
+          </span>
+        </div>
+      </div>
+
+      <!-- HERO ART: a hand-tied bouquet of cake pops -->
+      <div class="hero-art fade-in">
+        <div class="bouquet float">
+          <svg viewBox="0 0 500 580" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <radialGradient id="vase" cx="50%" cy="30%" r="70%">
+                <stop offset="0%" stop-color="#F4ECDC"/>
+                <stop offset="60%" stop-color="#E4D4B4"/>
+                <stop offset="100%" stop-color="#B58F5C"/>
+              </radialGradient>
+              <linearGradient id="ribbon" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#D49381"/>
+                <stop offset="100%" stop-color="#A53F2E"/>
+              </linearGradient>
+              <radialGradient id="popPink"  cx="35%" cy="32%"><stop offset="0%" stop-color="#FBD6DD"/><stop offset="60%" stop-color="#F2A6B6"/><stop offset="100%" stop-color="#C26880"/></radialGradient>
+              <radialGradient id="popChoc"  cx="35%" cy="32%"><stop offset="0%" stop-color="#9C6A3E"/><stop offset="60%" stop-color="#5C3F1F"/><stop offset="100%" stop-color="#2E1A0E"/></radialGradient>
+              <radialGradient id="popMint"  cx="35%" cy="32%"><stop offset="0%" stop-color="#DAF0E2"/><stop offset="60%" stop-color="#A8D2BB"/><stop offset="100%" stop-color="#6B9A82"/></radialGradient>
+              <radialGradient id="popVan"   cx="35%" cy="32%"><stop offset="0%" stop-color="#FFF6E1"/><stop offset="60%" stop-color="#F4DEA8"/><stop offset="100%" stop-color="#C9A26A"/></radialGradient>
+              <radialGradient id="popRose"  cx="35%" cy="32%"><stop offset="0%" stop-color="#F1C7C0"/><stop offset="60%" stop-color="#D88B7E"/><stop offset="100%" stop-color="#9C4836"/></radialGradient>
+              <radialGradient id="popLav"   cx="35%" cy="32%"><stop offset="0%" stop-color="#E5D7EE"/><stop offset="60%" stop-color="#B8A0CC"/><stop offset="100%" stop-color="#7E6499"/></radialGradient>
+              <radialGradient id="popButter" cx="35%" cy="32%"><stop offset="0%" stop-color="#FEEFC0"/><stop offset="60%" stop-color="#EAC270"/><stop offset="100%" stop-color="#A87E2C"/></radialGradient>
+            </defs>
+
+            <!-- soft ground shadow -->
+            <ellipse cx="250" cy="540" rx="170" ry="14" fill="#3A271A" opacity=".15"/>
+
+            <!-- VASE / cup -->
+            <path d="M130 400 L180 540 Q250 555 320 540 L370 400 Z" fill="url(#vase)" stroke="#3A271A" stroke-width="1.5"/>
+            <ellipse cx="250" cy="400" rx="120" ry="18" fill="#C9A26A" stroke="#3A271A" stroke-width="1.5"/>
+            <ellipse cx="250" cy="398" rx="116" ry="14" fill="#8B5A1E"/>
+            <!-- vase highlight -->
+            <path d="M148 410 L186 538" stroke="#FFFFFF" stroke-width="3" opacity=".25" stroke-linecap="round"/>
+            <!-- ribbon -->
+            <path d="M170 470 Q200 460 230 472 L 235 488 Q205 478 173 488 Z" fill="url(#ribbon)" stroke="#3A271A" stroke-width="1"/>
+            <path d="M225 475 L 195 510 L 205 512 L 230 488" fill="url(#ribbon)" stroke="#3A271A" stroke-width="1"/>
+            <path d="M232 475 L 262 510 L 252 512 L 228 488" fill="url(#ribbon)" stroke="#3A271A" stroke-width="1"/>
+
+            <!-- STICKS (drawn behind pops) -->
+            <g stroke="#3A271A" stroke-width="0.6">
+              <line x1="135" y1="220" x2="200" y2="410" stroke="#E8D7B4" stroke-width="4"/>
+              <line x1="135" y1="220" x2="200" y2="410" stroke="#FBF7EE" stroke-width="1.5"/>
+              <line x1="250" y1="180" x2="250" y2="410" stroke="#E8D7B4" stroke-width="4"/>
+              <line x1="250" y1="180" x2="250" y2="410" stroke="#FBF7EE" stroke-width="1.5"/>
+              <line x1="365" y1="220" x2="300" y2="410" stroke="#E8D7B4" stroke-width="4"/>
+              <line x1="365" y1="220" x2="300" y2="410" stroke="#FBF7EE" stroke-width="1.5"/>
+              <line x1="190" y1="120" x2="225" y2="408" stroke="#E8D7B4" stroke-width="4"/>
+              <line x1="190" y1="120" x2="225" y2="408" stroke="#FBF7EE" stroke-width="1.5"/>
+              <line x1="310" y1="120" x2="275" y2="408" stroke="#E8D7B4" stroke-width="4"/>
+              <line x1="310" y1="120" x2="275" y2="408" stroke="#FBF7EE" stroke-width="1.5"/>
+              <line x1="250" y1="80"  x2="252" y2="406" stroke="#E8D7B4" stroke-width="4"/>
+              <line x1="250" y1="80"  x2="252" y2="406" stroke="#FBF7EE" stroke-width="1.5"/>
+            </g>
+
+            <!-- POPS (back row, smaller / further) -->
+            <!-- top center: ivory bridal with pearls -->
+            <g transform="translate(250 80)">
+              <circle r="46" fill="url(#popVan)" stroke="#3A271A" stroke-width="1.2"/>
+              <circle r="46" fill="url(#sphereSheen)"/>
+              <circle cx="-14" cy="-14" r="6" fill="url(#popHL)"/>
+              <!-- gold pearls -->
+              <circle cx="-18" cy="6" r="3.5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
+              <circle cx="-4" cy="-8" r="3" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
+              <circle cx="12" cy="14" r="3.5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
+              <circle cx="18" cy="-6" r="3" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
+              <circle cx="-12" cy="22" r="3" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
+              <circle cx="22" cy="22" r="3" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
+              <circle cx="0" cy="-22" r="3" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
+            </g>
+
+            <!-- top left: pink with white drizzle -->
+            <g transform="translate(190 120)">
+              <circle r="42" fill="url(#popPink)" stroke="#3A271A" stroke-width="1.2"/>
+              <!-- drizzle -->
+              <path d="M-32 -10 Q-20 -2 -16 8 Q-8 18 -4 28 Q4 36 8 40" stroke="#FBF7EE" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M-10 -36 Q-2 -22 8 -18 Q18 -10 22 0 Q28 12 32 18" stroke="#FBF7EE" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M14 -28 Q22 -14 30 -8" stroke="#FBF7EE" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <circle r="42" fill="url(#sphereSheen)"/>
+              <circle cx="-12" cy="-14" r="5" fill="url(#popHL)"/>
+            </g>
+
+            <!-- top right: chocolate with sprinkles -->
+            <g transform="translate(310 120)">
+              <circle r="42" fill="url(#popChoc)" stroke="#3A271A" stroke-width="1.2"/>
+              <!-- rainbow sprinkles -->
+              <rect x="-22" y="-10" width="9" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(20 -17 -8)"/>
+              <rect x="-6" y="-20" width="9" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-30 -1 -18)"/>
+              <rect x="8" y="-12" width="9" height="3" rx="1.5" fill="#EAC270" transform="rotate(40 13 -10)"/>
+              <rect x="-18" y="8" width="9" height="3" rx="1.5" fill="#B8A0CC" transform="rotate(-15 -13 10)"/>
+              <rect x="2" y="2" width="9" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(70 7 4)"/>
+              <rect x="14" y="18" width="9" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-25 19 20)"/>
+              <rect x="-12" y="22" width="9" height="3" rx="1.5" fill="#EAC270" transform="rotate(50 -7 24)"/>
+              <rect x="20" y="-2" width="9" height="3" rx="1.5" fill="#B8A0CC" transform="rotate(15 25 0)"/>
+              <rect x="6" y="-30" width="9" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(80 11 -28)"/>
+              <circle r="42" fill="url(#sphereSheen)"/>
+              <circle cx="-12" cy="-14" r="5" fill="url(#popHL)"/>
+            </g>
+
+            <!-- left side: mint -->
+            <g transform="translate(135 220)">
+              <circle r="40" fill="url(#popMint)" stroke="#3A271A" stroke-width="1.2"/>
+              <!-- dark chocolate flecks -->
+              <circle cx="-12" cy="-4" r="2.5" fill="#3A271A"/>
+              <circle cx="6" cy="-12" r="2" fill="#3A271A"/>
+              <circle cx="14" cy="8" r="2.5" fill="#3A271A"/>
+              <circle cx="-4" cy="14" r="2" fill="#3A271A"/>
+              <circle cx="-16" cy="10" r="2" fill="#3A271A"/>
+              <circle cx="20" cy="-6" r="2" fill="#3A271A"/>
+              <circle r="40" fill="url(#sphereSheen)"/>
+              <circle cx="-12" cy="-14" r="5" fill="url(#popHL)"/>
+            </g>
+
+            <!-- right side: butter yellow with pink rosette -->
+            <g transform="translate(365 220)">
+              <circle r="40" fill="url(#popButter)" stroke="#3A271A" stroke-width="1.2"/>
+              <circle r="40" fill="url(#sphereSheen)"/>
+              <!-- rosette on top-left -->
+              <g transform="translate(-12 -16)">
+                <circle r="11" fill="#F2A6B6"/>
+                <path d="M-7 -3 Q0 -10 7 -3 Q10 5 0 6 Q-10 5 -7 -3 Z" fill="#FBD6DD"/>
+                <circle r="3" fill="#C26880"/>
+              </g>
+              <!-- leaf -->
+              <ellipse cx="0" cy="-22" rx="6" ry="3" fill="#5E7253" transform="rotate(-30 0 -22)"/>
+              <circle cx="-15" cy="-18" r="5" fill="url(#popHL)"/>
+            </g>
+
+            <!-- front center: rose with gold leaf -->
+            <g transform="translate(250 180)">
+              <circle r="48" fill="url(#popRose)" stroke="#3A271A" stroke-width="1.2"/>
+              <circle r="48" fill="url(#sphereSheen)"/>
+              <!-- gold leaf flakes -->
+              <path d="M-18 -22 L-10 -18 L-8 -10 Z" fill="#E9B958" opacity=".9"/>
+              <path d="M14 -8 L 24 -4 L 20 6 Z" fill="#E9B958" opacity=".9"/>
+              <path d="M-10 20 L -2 18 L -2 28 Z" fill="#E9B958" opacity=".9"/>
+              <path d="M20 24 L 28 18 L 30 26 Z" fill="#E9B958" opacity=".9"/>
+              <!-- sugar pearls -->
+              <circle cx="6" cy="-22" r="3" fill="#FBF7EE"/>
+              <circle cx="-22" cy="6" r="3" fill="#FBF7EE"/>
+              <circle cx="22" cy="-18" r="2.5" fill="#FBF7EE"/>
+              <circle cx="-14" cy="28" r="2.5" fill="#FBF7EE"/>
+              <circle cx="-12" cy="-16" r="6" fill="url(#popHL)"/>
+            </g>
+
+            <!-- decorative falling sprinkles -->
+            <g opacity=".75">
+              <rect x="60" y="60" width="10" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(30 65 62)"/>
+              <rect x="430" y="80" width="10" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-20 435 82)"/>
+              <rect x="40" y="320" width="10" height="3" rx="1.5" fill="#EAC270" transform="rotate(40 45 322)"/>
+              <rect x="450" y="320" width="10" height="3" rx="1.5" fill="#B8A0CC" transform="rotate(-30 455 322)"/>
+              <rect x="80" y="500" width="10" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(15 85 502)"/>
+              <rect x="420" y="490" width="10" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-50 425 492)"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="sticker">
+          made<br>in
+          <span class="num">Enfield CT</span>
+        </div>
+
+        <div class="price-tag">
+          <span class="small">from</span>
+          <span class="big">$3 / pop</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>hand-rolled, hand-dipped <span class="leaf">✿</span></span>
+      <span>no molds, no shortcuts <span class="leaf">✿</span></span>
+      <span>custom colors to match your party <span class="leaf">✿</span></span>
+      <span>local pickup in Enfield, CT <span class="leaf">✿</span></span>
+      <span>weddings · showers · birthdays <span class="leaf">✿</span></span>
+      <span>hand-rolled, hand-dipped <span class="leaf">✿</span></span>
+      <span>no molds, no shortcuts <span class="leaf">✿</span></span>
+      <span>custom colors to match your party <span class="leaf">✿</span></span>
+      <span>local pickup in Enfield, CT <span class="leaf">✿</span></span>
+      <span>weddings · showers · birthdays <span class="leaf">✿</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLAVORS ============ -->
+<section id="flavors">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <h2 class="display">The <em>flavor</em><br>menu.</h2>
+      <div class="meta">
+        <span class="script">— rotates with the season</span>
+        <span class="eyebrow">Six house flavors · custom on request</span>
+      </div>
+    </div>
+
+    <div class="bakes-grid">
+
+      <!-- 1: Classic Vanilla Birthday -->
+      <article class="card fade-in">
+        <span class="corner"></span>
+        <span class="price">$3.00</span>
+        <div class="illo">
+          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="bgA" cx="50%" cy="40%" r="80%">
+                <stop offset="0%" stop-color="#FFF1D8"/>
+                <stop offset="100%" stop-color="#E4C088"/>
+              </radialGradient>
+              <radialGradient id="popA" cx="35%" cy="32%">
+                <stop offset="0%" stop-color="#FFF6E1"/>
+                <stop offset="60%" stop-color="#F4DEA8"/>
+                <stop offset="100%" stop-color="#C9A26A"/>
+              </radialGradient>
+            </defs>
+            <rect width="320" height="256" fill="url(#bgA)"/>
+            <!-- soft scattered sprinkles in background -->
+            <g opacity=".5">
+              <rect x="40" y="200" width="10" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(30 45 202)"/>
+              <rect x="60" y="220" width="8" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-15 64 222)"/>
+              <rect x="270" y="210" width="10" height="3" rx="1.5" fill="#EAC270" transform="rotate(40 275 212)"/>
+              <rect x="240" y="225" width="8" height="3" rx="1.5" fill="#B8A0CC" transform="rotate(-30 244 227)"/>
+            </g>
+            <!-- shadow under pop -->
+            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
+            <!-- stick -->
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
+            <!-- pop sphere -->
+            <circle cx="160" cy="110" r="70" fill="url(#popA)" stroke="#3A271A" stroke-width="1.2"/>
+            <!-- sprinkles on pop -->
+            <g>
+              <rect x="118" y="80" width="12" height="4" rx="2" fill="#F2A6B6" transform="rotate(35 124 82)"/>
+              <rect x="100" y="100" width="12" height="4" rx="2" fill="#A8D2BB" transform="rotate(-20 106 102)"/>
+              <rect x="190" y="80" width="12" height="4" rx="2" fill="#EAC270" transform="rotate(45 196 82)"/>
+              <rect x="200" y="110" width="12" height="4" rx="2" fill="#B8A0CC" transform="rotate(-30 206 112)"/>
+              <rect x="145" y="60" width="12" height="4" rx="2" fill="#F2A6B6" transform="rotate(70 151 62)"/>
+              <rect x="125" y="135" width="12" height="4" rx="2" fill="#A8D2BB" transform="rotate(15 131 137)"/>
+              <rect x="170" y="150" width="12" height="4" rx="2" fill="#EAC270" transform="rotate(-40 176 152)"/>
+              <rect x="195" y="140" width="12" height="4" rx="2" fill="#B8A0CC" transform="rotate(60 201 142)"/>
+              <rect x="110" y="120" width="12" height="4" rx="2" fill="#F2A6B6" transform="rotate(-25 116 122)"/>
+              <rect x="165" y="120" width="12" height="4" rx="2" fill="#A8D2BB" transform="rotate(80 171 122)"/>
+              <rect x="140" y="100" width="12" height="4" rx="2" fill="#EAC270" transform="rotate(45 146 102)"/>
+              <rect x="180" y="55" width="12" height="4" rx="2" fill="#B8A0CC" transform="rotate(-20 186 57)"/>
+            </g>
+            <!-- sheen -->
+            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
+            <circle cx="140" cy="88" r="11" fill="url(#popHL)"/>
+          </svg>
+        </div>
+        <h3>Birthday <em>Confetti</em></h3>
+        <p>Vanilla cake folded with confetti sprinkles, dipped in white chocolate, finished with rainbow jimmies.</p>
+        <div class="tags">
+          <span class="tag">Vanilla</span>
+          <span class="tag">Crowd favorite</span>
+          <span class="tag">Year-round</span>
+        </div>
+      </article>
+
+      <!-- 2: Chocolate Drizzle -->
+      <article class="card fade-in">
+        <span class="corner"></span>
+        <span class="price">$3.25</span>
+        <div class="illo">
+          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="bgB" cx="50%" cy="40%" r="80%">
+                <stop offset="0%" stop-color="#F0DCB4"/>
+                <stop offset="100%" stop-color="#B58F5C"/>
+              </radialGradient>
+              <radialGradient id="popB" cx="35%" cy="32%">
+                <stop offset="0%" stop-color="#9C6A3E"/>
+                <stop offset="60%" stop-color="#5C3F1F"/>
+                <stop offset="100%" stop-color="#2E1A0E"/>
+              </radialGradient>
+            </defs>
+            <rect width="320" height="256" fill="url(#bgB)"/>
+            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".22"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
+            <circle cx="160" cy="110" r="70" fill="url(#popB)" stroke="#3A271A" stroke-width="1.2"/>
+            <!-- white chocolate drizzle -->
+            <path d="M95 95 Q108 105 105 120 Q98 138 110 150 Q120 162 116 175"
+                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M125 50 Q138 70 130 90 Q120 110 140 125 Q160 140 152 160 Q142 175 155 178"
+                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M180 48 Q175 70 195 80 Q215 92 205 110 Q190 130 210 145 Q225 158 215 172"
+                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M220 90 Q230 105 220 120 Q210 140 225 155"
+                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
+            <circle cx="140" cy="88" r="11" fill="url(#popHL)"/>
+            <!-- gold leaf -->
+            <path d="M195 65 L 208 60 L 210 72 Z" fill="#E9B958"/>
+            <path d="M110 145 L 122 142 L 124 153 Z" fill="#E9B958" opacity=".9"/>
+          </svg>
+        </div>
+        <h3>Double Chocolate <em>Drizzle</em></h3>
+        <p>Rich dark chocolate cake dipped in semi-sweet, finished with a hand-piped white chocolate drizzle and gold leaf.</p>
+        <div class="tags">
+          <span class="tag">Dark chocolate</span>
+          <span class="tag">Year-round</span>
+          <span class="tag">Most loved</span>
+        </div>
+      </article>
+
+      <!-- 3: Strawberry Shortcake -->
+      <article class="card fade-in">
+        <span class="corner"></span>
+        <span class="price">$3.25</span>
+        <div class="illo">
+          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="bgC" cx="50%" cy="40%" r="80%">
+                <stop offset="0%" stop-color="#FEE1E8"/>
+                <stop offset="100%" stop-color="#E59FB1"/>
+              </radialGradient>
+              <radialGradient id="popC" cx="35%" cy="32%">
+                <stop offset="0%" stop-color="#FBD6DD"/>
+                <stop offset="60%" stop-color="#F2A6B6"/>
+                <stop offset="100%" stop-color="#C26880"/>
+              </radialGradient>
+            </defs>
+            <rect width="320" height="256" fill="url(#bgC)"/>
+            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
+            <circle cx="160" cy="110" r="70" fill="url(#popC)" stroke="#3A271A" stroke-width="1.2"/>
+            <!-- white drip with cherry -->
+            <path d="M100 80 Q115 90 110 110 Q102 130 118 145 L 200 145 Q215 132 210 115 Q200 95 215 78
+                     Q220 70 200 65 Q175 55 155 65 Q130 60 110 70 Q95 75 100 80 Z"
+                  fill="#FBF7EE" opacity=".95"/>
+            <!-- mini strawberry on top -->
+            <g transform="translate(160 55)">
+              <path d="M-12 0 Q-8 20 0 24 Q8 20 12 0 Q6 -3 0 -2 Q-6 -3 -12 0 Z" fill="#9C2E26"/>
+              <circle cx="-4" cy="4" r="1.2" fill="#FBF7EE"/>
+              <circle cx="3" cy="8" r="1.2" fill="#FBF7EE"/>
+              <circle cx="-2" cy="14" r="1.2" fill="#FBF7EE"/>
+              <circle cx="5" cy="16" r="1.2" fill="#FBF7EE"/>
+              <!-- leafy top -->
+              <path d="M-8 -2 L0 -10 L8 -2 L 4 0 L 0 -4 L -4 0 Z" fill="#5E7253"/>
+            </g>
+            <!-- sprinkles -->
+            <circle cx="125" cy="125" r="2.5" fill="#9C2E26"/>
+            <circle cx="180" cy="120" r="2.5" fill="#9C2E26"/>
+            <circle cx="145" cy="140" r="2.5" fill="#9C2E26"/>
+            <circle cx="195" cy="135" r="2.5" fill="#9C2E26"/>
+            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
+            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
+          </svg>
+        </div>
+        <h3>Strawberry <em>Shortcake</em></h3>
+        <p>Strawberry-vanilla cake studded with real freeze-dried berries, dipped in pink, crowned with a sugar berry.</p>
+        <div class="tags">
+          <span class="tag">Fruit</span>
+          <span class="tag">Spring &amp; summer</span>
+          <span class="tag">Bestseller</span>
+        </div>
+      </article>
+
+      <!-- 4: Cookies & Cream -->
+      <article class="card fade-in">
+        <span class="corner"></span>
+        <span class="price">$3.25</span>
+        <div class="illo">
+          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="bgD" cx="50%" cy="40%" r="80%">
+                <stop offset="0%" stop-color="#E8E4D4"/>
+                <stop offset="100%" stop-color="#A39A86"/>
+              </radialGradient>
+              <radialGradient id="popD" cx="35%" cy="32%">
+                <stop offset="0%" stop-color="#FFFFFF"/>
+                <stop offset="55%" stop-color="#EDE6D2"/>
+                <stop offset="100%" stop-color="#A89B7B"/>
+              </radialGradient>
+            </defs>
+            <rect width="320" height="256" fill="url(#bgD)"/>
+            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
+            <circle cx="160" cy="110" r="70" fill="url(#popD)" stroke="#3A271A" stroke-width="1.2"/>
+            <!-- cookie chunks -->
+            <g>
+              <path d="M100 85 L112 78 L122 90 L116 102 L103 100 Z" fill="#2E1A0E"/>
+              <path d="M210 90 L222 86 L228 100 L218 110 L208 102 Z" fill="#2E1A0E"/>
+              <path d="M140 60 L155 56 L160 70 L148 75 Z" fill="#2E1A0E"/>
+              <path d="M125 130 L142 128 L148 140 L135 148 L122 142 Z" fill="#2E1A0E"/>
+              <path d="M180 140 L195 138 L198 152 L185 158 L175 150 Z" fill="#2E1A0E"/>
+              <path d="M165 100 L175 100 L178 110 L170 116 L162 108 Z" fill="#2E1A0E"/>
+              <!-- crumbs -->
+              <circle cx="115" cy="115" r="2" fill="#2E1A0E"/>
+              <circle cx="200" cy="125" r="2" fill="#2E1A0E"/>
+              <circle cx="155" cy="155" r="2" fill="#2E1A0E"/>
+              <circle cx="135" cy="78" r="1.8" fill="#2E1A0E"/>
+              <circle cx="190" cy="65" r="1.8" fill="#2E1A0E"/>
+            </g>
+            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
+            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
+          </svg>
+        </div>
+        <h3>Cookies &amp; <em>Cream</em></h3>
+        <p>Cream-cheese-frosted vanilla cake folded with chocolate sandwich cookies, dipped in white chocolate.</p>
+        <div class="tags">
+          <span class="tag">Vanilla + cookie</span>
+          <span class="tag">Year-round</span>
+          <span class="tag">Kid hit</span>
+        </div>
+      </article>
+
+      <!-- 5: Bridal Pearl -->
+      <article class="card fade-in">
+        <span class="corner"></span>
+        <span class="price">$4.00</span>
+        <div class="illo">
+          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="bgE" cx="50%" cy="40%" r="80%">
+                <stop offset="0%" stop-color="#F7F0E0"/>
+                <stop offset="100%" stop-color="#C9B58A"/>
+              </radialGradient>
+              <radialGradient id="popE" cx="35%" cy="32%">
+                <stop offset="0%" stop-color="#FFFFFF"/>
+                <stop offset="60%" stop-color="#F4ECD8"/>
+                <stop offset="100%" stop-color="#C9A26A"/>
+              </radialGradient>
+            </defs>
+            <rect width="320" height="256" fill="url(#bgE)"/>
+            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
+            <circle cx="160" cy="110" r="70" fill="url(#popE)" stroke="#3A271A" stroke-width="1.2"/>
+            <!-- gold pearls (alternating gold + ivory) -->
+            <g>
+              <circle cx="120" cy="90" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="135" cy="75" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="155" cy="68" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="178" cy="72" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="195" cy="85" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="210" cy="100" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="218" cy="120" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="105" cy="110" r="5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="115" cy="135" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="135" cy="155" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="160" cy="165" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="185" cy="160" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="205" cy="145" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
+              <circle cx="145" cy="115" r="4" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
+              <circle cx="175" cy="125" r="4" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
+            </g>
+            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
+            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
+          </svg>
+        </div>
+        <h3>Champagne <em>Pearl</em></h3>
+        <p>Champagne-vanilla cake, ivory chocolate dip, edible gold &amp; ivory pearls hand-placed by hand. Wedding favorite.</p>
+        <div class="tags">
+          <span class="tag">Weddings</span>
+          <span class="tag">Custom</span>
+          <span class="tag">Champagne</span>
+        </div>
+      </article>
+
+      <!-- 6: Red Velvet -->
+      <article class="card fade-in">
+        <span class="corner"></span>
+        <span class="price">$3.25</span>
+        <div class="illo">
+          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="bgF" cx="50%" cy="40%" r="80%">
+                <stop offset="0%" stop-color="#E8C0BC"/>
+                <stop offset="100%" stop-color="#7E3A35"/>
+              </radialGradient>
+              <radialGradient id="popF" cx="35%" cy="32%">
+                <stop offset="0%" stop-color="#C8736A"/>
+                <stop offset="50%" stop-color="#9C2E26"/>
+                <stop offset="100%" stop-color="#5C1813"/>
+              </radialGradient>
+            </defs>
+            <rect width="320" height="256" fill="url(#bgF)"/>
+            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".22"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
+            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
+            <circle cx="160" cy="110" r="70" fill="url(#popF)" stroke="#3A271A" stroke-width="1.2"/>
+            <!-- cream cheese swirl on top -->
+            <g transform="translate(160 60)">
+              <path d="M-22 8 Q-22 -10 0 -10 Q22 -10 22 8 Q22 18 12 18 Q14 6 0 6 Q-14 6 -12 18 Q-22 18 -22 8 Z"
+                    fill="#FBF7EE"/>
+              <path d="M-12 14 Q-12 4 0 4 Q12 4 12 14 Q12 18 6 18 Q8 10 0 10 Q-8 10 -6 18 Q-12 18 -12 14 Z"
+                    fill="#FBF7EE"/>
+              <ellipse cx="0" cy="0" rx="6" ry="3" fill="#FBF7EE"/>
+              <!-- shadow on swirl -->
+              <path d="M-22 8 Q-22 -10 0 -10 Q22 -10 22 8" fill="none" stroke="#E4D4B4" stroke-width="1"/>
+            </g>
+            <!-- red velvet crumbs on white -->
+            <circle cx="148" cy="62" r="1.6" fill="#9C2E26"/>
+            <circle cx="172" cy="58" r="1.4" fill="#9C2E26"/>
+            <circle cx="160" cy="48" r="1.4" fill="#9C2E26"/>
+            <circle cx="155" cy="72" r="1.4" fill="#9C2E26"/>
+            <circle cx="168" cy="72" r="1.4" fill="#9C2E26"/>
+            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
+            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
+          </svg>
+        </div>
+        <h3>Red Velvet &amp; <em>Cream Cheese</em></h3>
+        <p>Tender red velvet, cream cheese frosting through the middle, dipped in red and crowned with a tiny cream cheese swirl.</p>
+        <div class="tags">
+          <span class="tag">Cocoa + tang</span>
+          <span class="tag">Year-round</span>
+          <span class="tag">Holiday hit</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="dotted-rule"></div></div>
+
+<!-- ============ STORY ============ -->
+<section id="story">
+  <div class="wrap">
+    <div class="story">
+      <div class="story-photo">
+        <div class="frame">
+          <span class="tape"></span>
+          <div class="ph">
+            <!-- "Emmy at work" illustration: hands rolling pops on a kitchen counter -->
+            <svg viewBox="0 0 240 320" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="kitchen2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#F0DCB4"/>
+                  <stop offset=".55" stop-color="#E4BB81"/>
+                  <stop offset="1" stop-color="#B57B4F"/>
+                </linearGradient>
+              </defs>
+              <rect width="240" height="320" fill="url(#kitchen2)"/>
+              <!-- shelf with jars -->
+              <rect x="20" y="48" width="200" height="2.5" fill="#5C3F2A"/>
+              <!-- jars -->
+              <rect x="30" y="20" width="22" height="30" rx="3" fill="#FBF6E9"/>
+              <rect x="34" y="26" width="14" height="6" fill="#F2A6B6" opacity=".8"/>
+              <rect x="60" y="14" width="20" height="36" rx="3" fill="#FBF6E9"/>
+              <rect x="63" y="22" width="14" height="8" fill="#A8D2BB"/>
+              <rect x="88" y="22" width="22" height="28" rx="3" fill="#FBF6E9"/>
+              <rect x="92" y="30" width="14" height="6" fill="#EAC270"/>
+              <rect x="118" y="18" width="20" height="32" rx="3" fill="#FBF6E9"/>
+              <rect x="121" y="26" width="14" height="6" fill="#B8A0CC"/>
+              <rect x="148" y="14" width="22" height="36" rx="3" fill="#FBF6E9"/>
+              <rect x="152" y="22" width="14" height="8" fill="#9C2E26" opacity=".75"/>
+              <rect x="180" y="20" width="22" height="30" rx="3" fill="#FBF6E9"/>
+              <rect x="184" y="26" width="14" height="6" fill="#5E7253"/>
+              <!-- chalkboard -->
+              <rect x="155" y="80" width="65" height="50" rx="3" fill="#3A271A"/>
+              <text x="187" y="98" text-anchor="middle" font-family="Caveat" font-size="11" fill="#F4ECDC">Today's</text>
+              <text x="187" y="113" text-anchor="middle" font-family="Caveat" font-size="14" fill="#F2A6B6">birthday</text>
+              <text x="187" y="125" text-anchor="middle" font-family="Caveat" font-size="11" fill="#F4ECDC">x 36</text>
+              <!-- counter -->
+              <rect x="0" y="200" width="240" height="120" fill="#8B5A1E"/>
+              <rect x="0" y="200" width="240" height="6" fill="#3A271A" opacity=".3"/>
+              <rect x="0" y="200" width="240" height="120" fill="url(#cross-hatch)" opacity=".2"/>
+              <!-- tray with pops in styrofoam block -->
+              <rect x="20" y="232" width="200" height="40" rx="3" fill="#FBF6E9"/>
+              <rect x="20" y="232" width="200" height="6" fill="#E4D4B4"/>
+              <!-- pops standing up in the block -->
+              <g>
+                <line x1="40" y1="232" x2="40" y2="195" stroke="#FBF7EE" stroke-width="2"/>
+                <circle cx="40" cy="187" r="11" fill="#F2A6B6"/>
+                <circle cx="40" cy="187" r="11" fill="url(#sphereSheen)"/>
+                <circle cx="37" cy="183" r="2" fill="#FBF7EE" opacity=".8"/>
+
+                <line x1="65" y1="232" x2="65" y2="190" stroke="#FBF7EE" stroke-width="2"/>
+                <circle cx="65" cy="182" r="11" fill="#5C3F1F"/>
+                <circle cx="65" cy="182" r="11" fill="url(#sphereSheen)"/>
+
+                <line x1="90" y1="232" x2="90" y2="193" stroke="#FBF7EE" stroke-width="2"/>
+                <circle cx="90" cy="185" r="11" fill="#F4DEA8"/>
+                <circle cx="90" cy="185" r="11" fill="url(#sphereSheen)"/>
+
+                <line x1="115" y1="232" x2="115" y2="188" stroke="#FBF7EE" stroke-width="2"/>
+                <circle cx="115" cy="180" r="11" fill="#A8D2BB"/>
+                <circle cx="115" cy="180" r="11" fill="url(#sphereSheen)"/>
+
+                <line x1="140" y1="232" x2="140" y2="193" stroke="#FBF7EE" stroke-width="2"/>
+                <circle cx="140" cy="185" r="11" fill="#F2A6B6"/>
+                <circle cx="140" cy="185" r="11" fill="url(#sphereSheen)"/>
+
+                <line x1="165" y1="232" x2="165" y2="190" stroke="#FBF7EE" stroke-width="2"/>
+                <circle cx="165" cy="182" r="11" fill="#9C2E26"/>
+                <circle cx="165" cy="182" r="11" fill="url(#sphereSheen)"/>
+
+                <line x1="190" y1="232" x2="190" y2="195" stroke="#FBF7EE" stroke-width="2"/>
+                <circle cx="190" cy="187" r="11" fill="#B8A0CC"/>
+                <circle cx="190" cy="187" r="11" fill="url(#sphereSheen)"/>
+              </g>
+              <!-- piping bag on counter -->
+              <path d="M28 290 L60 290 L48 320 L40 320 Z" fill="#FBF6E9"/>
+              <circle cx="44" cy="320" r="1.5" fill="#F2A6B6"/>
+              <!-- bowl of sprinkles -->
+              <ellipse cx="200" cy="295" rx="22" ry="6" fill="#8B5A1E"/>
+              <ellipse cx="200" cy="291" rx="22" ry="6" fill="#FBF6E9"/>
+              <ellipse cx="200" cy="288" rx="20" ry="4" fill="#E4D4B4"/>
+              <g opacity=".95">
+                <rect x="188" y="285" width="3" height="1.2" fill="#F2A6B6" transform="rotate(20 189 286)"/>
+                <rect x="196" y="284" width="3" height="1.2" fill="#A8D2BB" transform="rotate(-15 197 285)"/>
+                <rect x="205" y="286" width="3" height="1.2" fill="#EAC270" transform="rotate(40 206 287)"/>
+                <rect x="212" y="284" width="3" height="1.2" fill="#B8A0CC" transform="rotate(-25 213 285)"/>
+                <rect x="200" y="289" width="3" height="1.2" fill="#F2A6B6" transform="rotate(60 201 290)"/>
+              </g>
+              <!-- apron silhouette -->
+              <path d="M75 320 L 75 280 Q 90 268 110 268 Q 130 268 145 280 L 145 320 Z" fill="#F4ECDC" opacity=".95"/>
+              <path d="M90 268 L 110 254 L 130 268" stroke="#B5532A" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <div class="cap">Saturday, 7:14 AM</div>
+        </div>
+        <div class="stamp-2">est.<br><strong style="font-size:24px; display:block; margin: 4px 0">2019</strong>Enfield · CT</div>
+      </div>
+
+      <div class="story-text fade-in">
+        <span class="eyebrow">Hi, I'm Emmy</span>
+        <h2 class="display">A whole business<br>on <em>a little stick.</em></h2>
+        <p>Emmy's Sweet Treats started in 2019, in my kitchen in Enfield, with a single batch of birthday cake pops for my niece's first birthday. The order from her teacher came the next week. Then a wedding. Then a baby shower. Suddenly there was a business.</p>
+        <p>Every pop is still rolled by hand &mdash; no molds, no pre-mades. Whatever color you want, I can match it. Whatever theme, I can build around it. The only rule is: it has to taste like it was made for you, because it was.</p>
+        <div>
+          <span class="sig">— Emmy</span>
+          <span class="sig-sub">Baker · Owner · Sprinkle wrangler</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OCCASIONS ============ -->
+<section id="occasions">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <h2 class="display"><em>Built for</em><br>the moment.</h2>
+      <div class="meta">
+        <span class="script">— or no occasion at all</span>
+        <span class="eyebrow">Customized to your theme &amp; colors</span>
+      </div>
+    </div>
+
+    <div class="occasions-grid">
+      <div class="occasion fade-in">
+        <div class="icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="4" y="10" width="16" height="9" rx="1.5" stroke="#3A271A" stroke-width="1.5"/>
+            <path d="M4 10L12 4L20 10" stroke="#3A271A" stroke-width="1.5" stroke-linejoin="round"/>
+            <line x1="12" y1="4" x2="12" y2="2" stroke="#B5532A" stroke-width="1.5"/>
+            <circle cx="12" cy="2" r="1" fill="#B5532A"/>
+          </svg>
+        </div>
+        <h4>Birthdays</h4>
+        <p>Confetti pops, character themes, sprinkle bouquets &amp; party favors.</p>
+      </div>
+      <div class="occasion fade-in">
+        <div class="icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 20S4 14 4 9a4 4 0 018-1 4 4 0 018 1c0 5-8 11-8 11z" stroke="#9C2E26" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>Weddings</h4>
+        <p>Ivory pearls, gold leaf, dip-to-match favors. Min 50 pops; book early.</p>
+      </div>
+      <div class="occasion fade-in">
+        <div class="icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="7" stroke="#3A271A" stroke-width="1.5"/>
+            <path d="M12 5v14" stroke="#3A271A" stroke-width="1.5"/>
+            <circle cx="12" cy="9" r="1.5" fill="#F2C1CB"/>
+            <circle cx="12" cy="15" r="1.5" fill="#A0BCE3"/>
+          </svg>
+        </div>
+        <h4>Gender Reveals</h4>
+        <p>White outside, pink or blue inside &mdash; surprise in the first bite.</p>
+      </div>
+      <div class="occasion fade-in">
+        <div class="icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 20h12M8 20V8a4 4 0 118 0v12" stroke="#3A271A" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="12" cy="6" r="1.5" fill="#E9B958"/>
+          </svg>
+        </div>
+        <h4>Baby Showers</h4>
+        <p>Pastels, tiny baby-themed details, ribbon bouquets in your colors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW ============ -->
+<section id="how" class="how">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <h2 class="display">How to <em>get a pop.</em></h2>
+      <div class="meta">
+        <span class="script">— easy as one, two, three, four</span>
+        <span class="eyebrow">One week notice · 12-pop minimum</span>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step fade-in">
+        <span class="ornament">~ first ~</span>
+        <div class="num">01</div>
+        <h4>Send a note</h4>
+        <p>Tell me the occasion, date, headcount, flavors, colors, and any inspiration photos.</p>
+      </div>
+      <div class="step fade-in">
+        <span class="ornament">~ then ~</span>
+        <div class="num">02</div>
+        <h4>I'll quote &amp; sketch</h4>
+        <p>You'll get a quick quote and a little design sketch within 48 hours. 50% deposit holds your date.</p>
+      </div>
+      <div class="step fade-in">
+        <span class="ornament">~ next ~</span>
+        <div class="num">03</div>
+        <h4>I get to rolling</h4>
+        <p>Pops are made fresh in the two days before pickup. Boxed in clear sleeves &amp; tied with ribbon.</p>
+      </div>
+      <div class="step fade-in">
+        <span class="ornament">~ finally ~</span>
+        <div class="num">04</div>
+        <h4>Pickup in Enfield</h4>
+        <p>Pickup from my home kitchen in Enfield. Local delivery within 10 miles for $15.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHISPERS ============ -->
+<section id="whispers" class="whispers">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <h2 class="display"><em>Kind words</em><br>from regulars.</h2>
+      <div class="meta">
+        <span class="script">— and the occasional postcard</span>
+        <span class="eyebrow">Things people have said</span>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <div class="quote fade-in">
+        <span class="tape"></span>
+        <span class="mark">"</span>
+        <p>Ordered 60 ivory-and-gold pops for our wedding favors. Guests were taking photos of them before they ate them. Then they ate them. Then they asked for more.</p>
+        <div class="by">Hana &amp; Wes — Suffield, CT</div>
+      </div>
+      <div class="quote fade-in">
+        <span class="tape" style="background:rgba(143,164,131,.5)"></span>
+        <span class="mark">"</span>
+        <p>My daughter wanted "unicorn cake pops with rainbow inside." Emmy made it happen. She's now five and a half and brand-loyal already.</p>
+        <div class="by">Marisol R. — Enfield neighbor</div>
+      </div>
+      <div class="quote fade-in">
+        <span class="tape" style="background:rgba(180,78,36,.45)"></span>
+        <span class="mark">"</span>
+        <p>The cookies &amp; cream pops disappeared from the office in eleven minutes. I timed it. Reordering for every birthday from here forward.</p>
+        <div class="by">Janet F. — Springfield office</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <h2 class="display"><em>Frequently</em><br>asked sweet things.</h2>
+      <div class="meta">
+        <span class="script">— ask me anything else</span>
+        <span class="eyebrow">Honest answers · no fluff</span>
+      </div>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq-item fade-in">
+        <summary>
+          <span class="q-num">01</span>
+          <span class="q-text">How far in advance should I place my order?</span>
+          <span class="toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="answer">
+          <p>At least <em>one week</em> for everyday orders, and <em>three to four weeks</em> for weddings or large events. Holidays like Mother's Day and Valentine's book up months ahead &mdash; get on the list early.</p>
+        </div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>
+          <span class="q-num">02</span>
+          <span class="q-text">Do you deliver, or is it pickup only?</span>
+          <span class="toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="answer">
+          <p>Pickup is free from my Enfield kitchen &mdash; Fri evenings &amp; Sat mornings by appointment. Local delivery within 10 miles is a flat <em>$15</em>. For weddings further out, message me; I've driven as far as Hartford and Springfield for the right pops.</p>
+        </div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>
+          <span class="q-num">03</span>
+          <span class="q-text">What's the minimum order?</span>
+          <span class="toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="answer">
+          <p>A dozen (12) is the smallest order I take. Weddings have a <em>50-pop minimum</em>. There's no maximum &mdash; the biggest single order so far was 320 for a corporate launch.</p>
+        </div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>
+          <span class="q-num">04</span>
+          <span class="q-text">Can you match a specific color or theme?</span>
+          <span class="toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="answer">
+          <p>Almost always, yes. Send hex codes, swatch photos, or even your invitation and I'll match it. <em>True neon and primary blue</em> are the trickiest with cocoa butter &mdash; I'll let you know up front if I need to tweak the shade.</p>
+        </div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>
+          <span class="q-num">05</span>
+          <span class="q-text">Do you do gluten-free or allergen-friendly?</span>
+          <span class="toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="answer">
+          <p>Gluten-free is available on request (no extra charge). My kitchen does work with peanuts, tree nuts, eggs, and dairy, so I can't guarantee zero cross-contact for severe allergies. Always mention allergies up front so I can give you an honest answer.</p>
+        </div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>
+          <span class="q-num">06</span>
+          <span class="q-text">How long do they keep?</span>
+          <span class="toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="answer">
+          <p>Best within <em>3&ndash;5 days</em> at room temperature, individually sleeved. Refrigerate for up to a week &mdash; bring back to room temp before serving so the chocolate doesn't sweat. They're not freezer-friendly with toppings.</p>
+        </div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>
+          <span class="q-num">07</span>
+          <span class="q-text">How do I pay?</span>
+          <span class="toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="answer">
+          <p>A <em>50% deposit</em> holds your date (Venmo, Zelle, or cash). Balance due at pickup. I'll send a quick confirmation note once the deposit lands so you know we're locked in.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="dotted-rule"></div></div>
+
+<!-- ============ BUILDER ============ -->
+<section id="order" class="builder">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <h2 class="display">Build your <em>bouquet.</em></h2>
+      <div class="meta">
+        <span class="script">— click, dip, send</span>
+        <span class="eyebrow">Live estimate · sent straight to Emmy</span>
+      </div>
+    </div>
+
+    <div class="builder-grid">
+
+      <!-- LEFT: controls -->
+      <form class="builder-controls fade-in" id="bouquetForm" autocomplete="off" novalidate>
+
+        <div class="field">
+          <div class="field-label">
+            <span class="name"><span class="step-num">01</span>What's the occasion?</span>
+            <span class="hint">pick one</span>
+          </div>
+          <div class="chips" data-group="occasion">
+            <button type="button" class="chip" data-value="Birthday" aria-pressed="true">Birthday</button>
+            <button type="button" class="chip" data-value="Wedding" aria-pressed="false">Wedding</button>
+            <button type="button" class="chip" data-value="Baby shower" aria-pressed="false">Baby shower</button>
+            <button type="button" class="chip" data-value="Gender reveal" aria-pressed="false">Gender reveal</button>
+            <button type="button" class="chip" data-value="Just because" aria-pressed="false">Just because</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">
+            <span class="name"><span class="step-num">02</span>How many pops?</span>
+            <span class="hint">min 12 · steps of 6</span>
+          </div>
+          <div class="stepper" data-group="qty">
+            <button type="button" data-step="-6" aria-label="Decrease quantity">&minus;</button>
+            <div class="count" id="qtyCount">24<small>pops</small></div>
+            <button type="button" data-step="6" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">
+            <span class="name"><span class="step-num">03</span>Pick your flavors</span>
+            <span class="hint">mix &amp; match</span>
+          </div>
+          <div class="chips" data-group="flavors">
+            <button type="button" class="chip flavor-chip" data-value="confetti" aria-pressed="true"><span class="dot" style="--swatch:#F4DEA8"></span>Birthday Confetti</button>
+            <button type="button" class="chip flavor-chip" data-value="choc" aria-pressed="true"><span class="dot" style="--swatch:#5C3F1F"></span>Double Chocolate</button>
+            <button type="button" class="chip flavor-chip" data-value="strawberry" aria-pressed="false"><span class="dot" style="--swatch:#F2A6B6"></span>Strawberry Shortcake</button>
+            <button type="button" class="chip flavor-chip" data-value="cookies" aria-pressed="false"><span class="dot" style="--swatch:#EDE6D2"></span>Cookies &amp; Cream</button>
+            <button type="button" class="chip flavor-chip" data-value="champagne" aria-pressed="false"><span class="dot" style="--swatch:#F4ECD8"></span>Champagne Pearl</button>
+            <button type="button" class="chip flavor-chip" data-value="redvelvet" aria-pressed="false"><span class="dot" style="--swatch:#9C2E26"></span>Red Velvet</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">
+            <span class="name"><span class="step-num">04</span>Theme palette</span>
+            <span class="hint">we can match exactly</span>
+          </div>
+          <div class="swatches" data-group="theme">
+            <button type="button" class="swatch" data-value="rainbow" aria-pressed="true" aria-label="Classic mix"
+              style="background:conic-gradient(from 200deg, #F2A6B6, #EAC270, #A8D2BB, #B8A0CC, #F2A6B6)">
+              <span class="label">Classic mix</span>
+            </button>
+            <button type="button" class="swatch" data-value="pastel" aria-pressed="false" aria-label="Pastel"
+              style="background:radial-gradient(circle at 30% 30%, #FBD6DD, #F2C1CB 60%, #DE8AA0)">
+              <span class="label">Pastel</span>
+            </button>
+            <button type="button" class="swatch" data-value="bridal" aria-pressed="false" aria-label="Ivory & gold"
+              style="background:linear-gradient(135deg,#FBF7EE 38%,#E9B958)">
+              <span class="label">Ivory &amp; gold</span>
+            </button>
+            <button type="button" class="swatch" data-value="jewel" aria-pressed="false" aria-label="Jewel tones"
+              style="background:linear-gradient(135deg,#9C2E26,#5E7253)">
+              <span class="label">Jewel tones</span>
+            </button>
+            <button type="button" class="swatch" data-value="blush" aria-pressed="false" aria-label="Blush & rose"
+              style="background:linear-gradient(135deg,#F2C1CB,#D49381)">
+              <span class="label">Blush &amp; rose</span>
+            </button>
+            <button type="button" class="swatch" data-value="sky" aria-pressed="false" aria-label="Sky blue"
+              style="background:linear-gradient(135deg,#A0BCE3,#FBF7EE)">
+              <span class="label">Sky blue</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">
+            <span class="name"><span class="step-num">05</span>When &amp; anything else</span>
+            <span class="hint">a sentence is plenty</span>
+          </div>
+          <div class="field-grid">
+            <input type="text" class="input-text" id="bDate" placeholder="Date you need them" />
+            <input type="text" class="input-text" id="bName" placeholder="Your name" />
+          </div>
+          <textarea id="bNotes" placeholder="Theme details, dietary notes, anything to know..."></textarea>
+        </div>
+
+        <div class="estimate">
+          <div class="est-text">
+            <span class="lbl">Estimate</span>
+            <span class="val" id="estVal">$72</span>
+            <span class="per" id="estPer">for 24 pops</span>
+            <div class="note" id="estNote">Final quote within 48 hours.</div>
+          </div>
+          <a class="send" id="sendBtn" href="#">
+            Send to Emmy
+            <svg width="16" height="12" viewBox="0 0 18 14" fill="none">
+              <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </form>
+
+      <!-- RIGHT: live preview -->
+      <div class="builder-preview fade-in">
+        <div class="frame">
+          <div class="preview-area">
+            <svg id="previewSvg" viewBox="0 0 500 540" preserveAspectRatio="xMidYMid meet" aria-label="Live preview of your bouquet">
+              <defs>
+                <radialGradient id="prevVase" cx="50%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#F4ECDC"/>
+                  <stop offset="60%" stop-color="#E4D4B4"/>
+                  <stop offset="100%" stop-color="#B58F5C"/>
+                </radialGradient>
+                <radialGradient id="prevSheen" cx="35%" cy="32%" r="65%">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+                  <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+                  <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+                  <stop offset="100%" stop-color="#000000" stop-opacity="0.25"/>
+                </radialGradient>
+                <radialGradient id="prevHL" cx="35%" cy="30%" r="22%">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <ellipse cx="250" cy="495" rx="170" ry="14" fill="#3A271A" opacity=".15"/>
+              <path d="M130 370 L180 500 Q250 515 320 500 L370 370 Z" fill="url(#prevVase)" stroke="#3A271A" stroke-width="1.5"/>
+              <ellipse cx="250" cy="370" rx="120" ry="18" fill="#C9A26A" stroke="#3A271A" stroke-width="1.5"/>
+              <ellipse cx="250" cy="368" rx="116" ry="14" fill="#8B5A1E"/>
+              <path d="M148 380 L186 498" stroke="#FFFFFF" stroke-width="3" opacity=".25" stroke-linecap="round"/>
+
+              <g id="prevSticks"></g>
+              <g id="prevPops"></g>
+
+              <g id="prevRibbon" transform="translate(0 -30)">
+                <path d="M170 470 Q200 460 230 472 L 235 488 Q205 478 173 488 Z" fill="#D49381" stroke="#3A271A" stroke-width="1"/>
+                <path d="M225 475 L 195 510 L 205 512 L 230 488" fill="#A53F2E" stroke="#3A271A" stroke-width="1"/>
+                <path d="M232 475 L 262 510 L 252 512 L 228 488" fill="#A53F2E" stroke="#3A271A" stroke-width="1"/>
+              </g>
+
+              <g id="prevBadge" transform="translate(430 100)">
+                <circle r="44" fill="#E9B958" stroke="#3A271A" stroke-width="1.5"/>
+                <circle r="44" fill="none" stroke="#3A271A" stroke-width="1" stroke-dasharray="2 4" opacity=".5"/>
+                <text id="prevBadgeNum" x="0" y="2" text-anchor="middle" font-family="Fraunces" font-size="24" font-weight="600" fill="#3A271A">×24</text>
+                <text x="0" y="20" text-anchor="middle" font-family="Fraunces" font-size="8" fill="#5C3F2A" letter-spacing="3">POPS</text>
+              </g>
+            </svg>
+          </div>
+          <div class="meta">
+            <span><strong id="metaOcc">Birthday</strong> bouquet</span>
+            <span id="metaFlavors">2 flavors</span>
+            <span id="metaTheme">Classic mix</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING NOTE ============ -->
+<section class="closing-cta">
+  <div class="wrap">
+    <div class="cta-wrap fade-in">
+      <svg class="sprig tl" width="90" height="90" viewBox="0 0 90 90" fill="none">
+        <path d="M10 70 Q30 50 60 30 Q70 22 80 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <ellipse cx="22" cy="62" rx="5" ry="2" transform="rotate(-30 22 62)" fill="currentColor"/>
+        <ellipse cx="35" cy="50" rx="5" ry="2" transform="rotate(-30 35 50)" fill="currentColor"/>
+        <ellipse cx="50" cy="38" rx="5" ry="2" transform="rotate(-30 50 38)" fill="currentColor"/>
+        <ellipse cx="65" cy="28" rx="5" ry="2" transform="rotate(-30 65 28)" fill="currentColor"/>
+      </svg>
+      <svg class="sprig br" width="90" height="90" viewBox="0 0 90 90" fill="none">
+        <path d="M10 70 Q30 50 60 30 Q70 22 80 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <ellipse cx="22" cy="62" rx="5" ry="2" transform="rotate(-30 22 62)" fill="currentColor"/>
+        <ellipse cx="35" cy="50" rx="5" ry="2" transform="rotate(-30 35 50)" fill="currentColor"/>
+        <ellipse cx="50" cy="38" rx="5" ry="2" transform="rotate(-30 50 38)" fill="currentColor"/>
+        <ellipse cx="65" cy="28" rx="5" ry="2" transform="rotate(-30 65 28)" fill="currentColor"/>
+      </svg>
+
+      <h2 class="display">Or just say <em>hello.</em></h2>
+      <p>Not ready to spec it all out? Skip the builder and send a plain old email &mdash; a "what do you think?" message is more than fine. I'll come back with a quote and a little sketch, usually within a day.</p>
+      <a href="mailto:hi@emmyssweettreats.com" class="btn-primary">
+        Email Emmy directly
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
+          <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div class="brand">
+        <h4>Emmy's Sweet Treats</h4>
+        <p>Hand-rolled, hand-dipped cake pops out of a tiny kitchen in Enfield, Connecticut. By order only, since 2019.</p>
+      </div>
+      <div>
+        <h5>Pickup</h5>
+        <ul>
+          <li>Enfield, CT 06082</li>
+          <li>Fri evenings &amp; Sat mornings</li>
+          <li>By appointment</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Order</h5>
+        <ul>
+          <li><a href="#flavors">Flavors</a></li>
+          <li><a href="#occasions">Occasions</a></li>
+          <li><a href="#how">How to order</a></li>
+          <li><a href="#order">Start an order</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Say hello</h5>
+        <ul>
+          <li><a href="mailto:hi@emmyssweettreats.com">hi@emmyssweettreats.com</a></li>
+          <li><a href="#">@emmys.sweet.treats</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>© 2026 Emmy's Sweet Treats</span>
+      <span class="script" style="font-size:22px; text-transform: none; letter-spacing: 0; color: var(--terracotta)">made with butter &amp; sprinkles</span>
+      <span>Enfield · Connecticut</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MINI BAR (sticky) ============ -->
+<div class="mini-bar" id="miniBar" role="status" aria-live="polite">
+  <span class="b-summary">
+    <strong id="mbCount">24</strong>pops
+    <span class="sep">·</span>
+    <span id="mbFlavors">Confetti, Chocolate</span>
+    <span class="sep">·</span>
+    <span id="mbPrice">$72</span>
+  </span>
+  <a href="#order" id="mbCta">Place order</a>
+</div>
+
+<script>
+  // ============ FADE-IN OBSERVER ============
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        e.target.style.transitionDelay = (i % 6) * 70 + 'ms';
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+  setTimeout(() => {
+    document.querySelectorAll('.hero .fade-in').forEach((el, i) => {
+      el.style.transitionDelay = (i * 80) + 'ms';
+      el.classList.add('in');
+    });
+  }, 80);
+
+  // ============ MOBILE MENU ============
+  const mt = document.querySelector('.menu-toggle');
+  const mm = document.getElementById('mobileMenu');
+  mt.addEventListener('click', () => {
+    const open = mt.getAttribute('aria-expanded') === 'true';
+    mt.setAttribute('aria-expanded', String(!open));
+    mm.classList.toggle('open', !open);
+    mm.setAttribute('aria-hidden', String(open));
+    document.body.style.overflow = !open ? 'hidden' : '';
+  });
+  mm.querySelectorAll('[data-mm]').forEach(a => a.addEventListener('click', () => {
+    mt.setAttribute('aria-expanded', 'false');
+    mm.classList.remove('open');
+    mm.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }));
+
+  // ============ FAQ — close others when one opens ============
+  document.querySelectorAll('details.faq-item').forEach(d => {
+    d.addEventListener('toggle', () => {
+      if (d.open) {
+        document.querySelectorAll('details.faq-item').forEach(o => { if (o !== d) o.open = false; });
+      }
+    });
+  });
+
+  // ============ BUILDER ============
+  const FLAVORS = {
+    confetti:  { name: 'Birthday Confetti',  price: 3.00, color: '#F4DEA8', deep: '#C9A26A', accent: '#F2A6B6', deco: 'sprinkles' },
+    choc:      { name: 'Double Chocolate',   price: 3.25, color: '#5C3F1F', deep: '#2E1A0E', accent: '#FBF7EE', deco: 'drizzle' },
+    strawberry:{ name: 'Strawberry Shortcake',price: 3.25, color: '#F2A6B6', deep: '#C26880', accent: '#FBF7EE', deco: 'berry'  },
+    cookies:   { name: 'Cookies & Cream',    price: 3.25, color: '#EDE6D2', deep: '#A89B7B', accent: '#2E1A0E', deco: 'cookie' },
+    champagne: { name: 'Champagne Pearl',    price: 4.00, color: '#F4ECD8', deep: '#C9A26A', accent: '#E9B958', deco: 'pearls' },
+    redvelvet: { name: 'Red Velvet',         price: 3.25, color: '#9C2E26', deep: '#5C1813', accent: '#FBF7EE', deco: 'swirl'  }
+  };
+
+  const THEMES = {
+    rainbow: { name: 'Classic mix',  ribbon: '#D49381', accent: ['#F2A6B6','#A8D2BB','#EAC270','#B8A0CC'] },
+    pastel:  { name: 'Pastel',       ribbon: '#F2C1CB', accent: ['#FBD6DD','#DAF0E2','#FEEFC0','#E5D7EE'] },
+    bridal:  { name: 'Ivory & gold', ribbon: '#E9B958', accent: ['#FBF7EE','#E9B958','#F4ECD8','#FBF7EE'] },
+    jewel:   { name: 'Jewel tones',  ribbon: '#5E7253', accent: ['#9C2E26','#5E7253','#7E6499','#C68A2A'] },
+    blush:   { name: 'Blush & rose', ribbon: '#D49381', accent: ['#F2C1CB','#D49381','#DE8AA0','#FBD6DD'] },
+    sky:     { name: 'Sky blue',     ribbon: '#A0BCE3', accent: ['#A0BCE3','#FBF7EE','#C9DFF2','#D8E9F5'] }
+  };
+
+  const state = {
+    occasion: 'Birthday',
+    quantity: 24,
+    flavors: ['confetti','choc'],
+    theme: 'rainbow',
+    date: '',
+    name: '',
+    notes: ''
+  };
+
+  const $ = sel => document.querySelector(sel);
+  const $$ = sel => document.querySelectorAll(sel);
+
+  // chip groups
+  $$('.chips').forEach(group => {
+    const groupName = group.dataset.group;
+    group.addEventListener('click', e => {
+      const btn = e.target.closest('.chip');
+      if (!btn) return;
+      const val = btn.dataset.value;
+      if (groupName === 'occasion') {
+        // single-select
+        group.querySelectorAll('.chip').forEach(b => b.setAttribute('aria-pressed', 'false'));
+        btn.setAttribute('aria-pressed','true');
+        state.occasion = val;
+      } else if (groupName === 'flavors') {
+        // multi-select, but at least one must stay
+        const pressed = btn.getAttribute('aria-pressed') === 'true';
+        if (pressed && state.flavors.length === 1) {
+          // shake animation
+          btn.animate(
+            [{transform:'translateX(0)'},{transform:'translateX(-4px)'},{transform:'translateX(4px)'},{transform:'translateX(0)'}],
+            {duration:300}
+          );
+          return;
+        }
+        btn.setAttribute('aria-pressed', String(!pressed));
+        if (pressed) {
+          state.flavors = state.flavors.filter(f => f !== val);
+        } else {
+          state.flavors.push(val);
+          burstSprinkles(btn);
+        }
+        // sync flavor cards
+        syncFlavorCards();
+      }
+      render();
+    });
+  });
+
+  // swatches (theme single-select)
+  const swGroup = $('.swatches');
+  swGroup.addEventListener('click', e => {
+    const btn = e.target.closest('.swatch');
+    if (!btn) return;
+    swGroup.querySelectorAll('.swatch').forEach(b => b.setAttribute('aria-pressed','false'));
+    btn.setAttribute('aria-pressed','true');
+    state.theme = btn.dataset.value;
+    burstSprinkles(btn);
+    render();
+  });
+
+  // stepper
+  $('.stepper').addEventListener('click', e => {
+    const btn = e.target.closest('button[data-step]');
+    if (!btn) return;
+    const step = parseInt(btn.dataset.step, 10);
+    state.quantity = Math.max(12, Math.min(500, state.quantity + step));
+    render();
+  });
+
+  // text inputs
+  $('#bDate').addEventListener('input', e => { state.date = e.target.value; render(); });
+  $('#bName').addEventListener('input', e => { state.name = e.target.value; });
+  $('#bNotes').addEventListener('input', e => { state.notes = e.target.value; });
+
+  // ============ FLAVOR CARDS — selectable ============
+  const cardFlavorOrder = ['confetti','choc','strawberry','cookies','champagne','redvelvet'];
+  $$('.bakes-grid .card').forEach((card, i) => {
+    const key = cardFlavorOrder[i];
+    if (!key) return;
+    card.dataset.flavor = key;
+    card.setAttribute('role','button');
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-pressed', state.flavors.includes(key) ? 'true' : 'false');
+    // inject add pill
+    const pill = document.createElement('span');
+    pill.className = 'add-pill';
+    pill.textContent = state.flavors.includes(key) ? 'In your bouquet' : 'Add to bouquet';
+    card.appendChild(pill);
+
+    const onToggle = (e) => {
+      e.preventDefault();
+      const pressed = card.getAttribute('aria-pressed') === 'true';
+      if (pressed && state.flavors.length === 1) {
+        card.animate([{transform:'translateX(0)'},{transform:'translateX(-6px)'},{transform:'translateX(6px)'},{transform:'translateX(0)'}],{duration:320});
+        return;
+      }
+      if (pressed) {
+        state.flavors = state.flavors.filter(f => f !== key);
+      } else {
+        state.flavors.push(key);
+        burstSprinkles(pill);
+      }
+      syncFlavorCards();
+      // sync chip in builder
+      const chip = document.querySelector(`.chips[data-group="flavors"] .chip[data-value="${key}"]`);
+      if (chip) chip.setAttribute('aria-pressed', state.flavors.includes(key) ? 'true' : 'false');
+      render();
+    };
+    card.addEventListener('click', onToggle);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') onToggle(e);
+    });
+  });
+
+  function syncFlavorCards() {
+    $$('.bakes-grid .card').forEach(card => {
+      const key = card.dataset.flavor;
+      const on = state.flavors.includes(key);
+      card.setAttribute('aria-pressed', on ? 'true' : 'false');
+      const pill = card.querySelector('.add-pill');
+      if (pill) pill.textContent = on ? 'In your bouquet' : 'Add to bouquet';
+    });
+  }
+
+  // ============ SPRINKLE BURST ============
+  const SPRINKLE_COLORS = ['#F2A6B6','#A8D2BB','#EAC270','#B8A0CC','#DE8AA0','#5E7253'];
+  function burstSprinkles(originEl) {
+    const r = originEl.getBoundingClientRect();
+    const cx = r.left + r.width/2;
+    const cy = r.top + r.height/2;
+    for (let i = 0; i < 12; i++) {
+      const s = document.createElement('span');
+      s.className = 'sprinkle';
+      s.style.background = SPRINKLE_COLORS[i % SPRINKLE_COLORS.length];
+      s.style.left = cx + 'px';
+      s.style.top = cy + 'px';
+      const angle = (Math.PI * 2) * (i / 12) + (Math.random()*0.6 - 0.3);
+      const dist = 60 + Math.random()*50;
+      const dx = Math.cos(angle) * dist;
+      const dy = Math.sin(angle) * dist - 20;
+      const rot = (Math.random()*720 - 360);
+      document.body.appendChild(s);
+      const anim = s.animate([
+        { transform: `translate(-50%,-50%) translate(0,0) rotate(0deg)`, opacity: 1 },
+        { transform: `translate(-50%,-50%) translate(${dx}px, ${dy}px) rotate(${rot}deg)`, opacity: 0 }
+      ], { duration: 800 + Math.random()*300, easing: 'cubic-bezier(.15,.6,.3,1)' });
+      anim.onfinish = () => s.remove();
+    }
+  }
+
+  // ============ PREVIEW RENDERER ============
+  const popPositions = [
+    // x, y (top of pop), r, swayClass
+    {x:250, y:60,  r:48, sway:1, layer:'back'},
+    {x:175, y:95,  r:42, sway:2, layer:'back'},
+    {x:325, y:95,  r:42, sway:3, layer:'back'},
+    {x:120, y:170, r:40, sway:1, layer:'mid'},
+    {x:380, y:170, r:40, sway:3, layer:'mid'},
+    {x:250, y:155, r:44, sway:2, layer:'mid'},
+    {x:175, y:225, r:38, sway:3, layer:'front'},
+    {x:325, y:225, r:38, sway:1, layer:'front'},
+    {x:250, y:255, r:40, sway:2, layer:'front'}
+  ];
+  const VASE_BASE = { x: 250, y: 410 };
+
+  function decorate(deco, color, accent, theme) {
+    // Returns SVG path/circle decorations for a given pop flavor.
+    // Sized relative to a r~40 circle centered at 0,0.
+    switch (deco) {
+      case 'sprinkles': {
+        const cols = (theme && THEMES[theme].accent) || ['#F2A6B6','#A8D2BB','#EAC270','#B8A0CC'];
+        const stops = [
+          [-22,-8,25],[-6,-18,-30],[10,-12,40],[-18,8,-15],[8,4,70],[16,18,-25],
+          [-12,18,50],[20,-4,15],[2,-26,80],[18,12,-40]
+        ];
+        return stops.map((s,i) =>
+          `<rect x="${s[0]-4}" y="${s[1]-1.5}" width="9" height="3" rx="1.5" fill="${cols[i % cols.length]}" transform="rotate(${s[2]} ${s[0]} ${s[1]})"/>`
+        ).join('');
+      }
+      case 'drizzle':
+        return `
+          <path d="M-30 -10 Q-18 0 -14 12 Q-6 22 -2 32 Q4 36 8 38" stroke="${accent}" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M-8 -28 Q0 -16 8 -10 Q18 -2 22 8 Q26 16 30 22" stroke="${accent}" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M14 -22 Q22 -10 28 -4" stroke="${accent}" stroke-width="2.6" fill="none" stroke-linecap="round"/>`;
+      case 'berry':
+        return `
+          <path d="M-22 -4 Q-30 -16 -10 -22 Q12 -28 22 -16 Q28 -4 22 4 Q10 12 -10 8 Q-22 6 -22 -4 Z" fill="${accent}" opacity=".95"/>
+          <g transform="translate(0 -16)">
+            <path d="M-7 0 Q-4 10 0 12 Q4 10 7 0 Q3 -2 0 -1 Q-3 -2 -7 0 Z" fill="#9C2E26"/>
+            <path d="M-5 -1 L0 -6 L5 -1 L 2 0 L 0 -2 L -2 0 Z" fill="#5E7253"/>
+          </g>`;
+      case 'cookie':
+        return `
+          <path d="M-22 -6 L-12 -12 L-6 -2 L-12 6 L-22 4 Z" fill="${accent}"/>
+          <path d="M8 -16 L18 -16 L22 -6 L14 -2 L6 -8 Z" fill="${accent}"/>
+          <path d="M-4 6 L8 8 L12 18 L0 22 L-10 14 Z" fill="${accent}"/>
+          <circle cx="-14" cy="14" r="2.2" fill="${accent}"/>
+          <circle cx="18" cy="10" r="2" fill="${accent}"/>
+          <circle cx="-2" cy="-18" r="2" fill="${accent}"/>`;
+      case 'pearls': {
+        const pearls = [
+          [-18,-14,5],[-4,-22,4],[10,-20,4.5],[22,-10,4],[24,4,4.5],
+          [16,16,4],[2,22,5],[-12,20,4],[-22,8,4.5],[-18,-2,4]
+        ];
+        return pearls.map(p =>
+          `<circle cx="${p[0]}" cy="${p[1]}" r="${p[2]}" fill="${(p[0]+p[1])%3===0?'#E9B958':'#FBF7EE'}" stroke="#8B5A1E" stroke-width=".6"/>`
+        ).join('');
+      }
+      case 'swirl':
+        return `
+          <g transform="translate(0 -22)">
+            <path d="M-16 6 Q-16 -8 0 -8 Q16 -8 16 6 Q16 12 8 12 Q10 4 0 4 Q-10 4 -8 12 Q-16 12 -16 6 Z" fill="${accent}"/>
+            <ellipse cx="0" cy="0" rx="4" ry="2" fill="${accent}"/>
+          </g>
+          <circle cx="-8" cy="0" r="1.4" fill="${color}" opacity=".7"/>
+          <circle cx="6" cy="-4" r="1.4" fill="${color}" opacity=".7"/>`;
+      default: return '';
+    }
+  }
+
+  function popSvg(idx, total, theme) {
+    const pos = popPositions[idx];
+    const flavors = state.flavors.map(k => FLAVORS[k]);
+    const f = flavors[idx % flavors.length];
+    const grad = `popGrad-${idx}`;
+    return `
+      <g transform="translate(${pos.x} ${pos.y})">
+        <g class="preview-pop sway-${pos.sway}" style="transform-origin: 0 ${pos.r}px;">
+          <defs>
+            <radialGradient id="${grad}" cx="35%" cy="32%" r="65%">
+              <stop offset="0%" stop-color="${lighten(f.color, 0.35)}"/>
+              <stop offset="60%" stop-color="${f.color}"/>
+              <stop offset="100%" stop-color="${f.deep}"/>
+            </radialGradient>
+          </defs>
+          <circle r="${pos.r}" fill="url(#${grad})" stroke="#3A271A" stroke-width="1.2"/>
+          ${decorate(f.deco, f.color, f.accent, theme)}
+          <circle r="${pos.r}" fill="url(#prevSheen)"/>
+          <circle cx="${-pos.r*0.28}" cy="${-pos.r*0.32}" r="${pos.r*0.18}" fill="url(#prevHL)"/>
+        </g>
+      </g>`;
+  }
+
+  function stickSvg(idx) {
+    const pos = popPositions[idx];
+    const stickTop = pos.y + pos.r * 0.8;
+    return `
+      <line x1="${pos.x}" y1="${stickTop}" x2="${VASE_BASE.x}" y2="${VASE_BASE.y}" stroke="#E8D7B4" stroke-width="4" stroke-linecap="round"/>
+      <line x1="${pos.x}" y1="${stickTop}" x2="${VASE_BASE.x}" y2="${VASE_BASE.y}" stroke="#FBF7EE" stroke-width="1.5" stroke-linecap="round"/>`;
+  }
+
+  function lighten(hex, amt) {
+    const c = hex.replace('#','');
+    const r = parseInt(c.substring(0,2),16);
+    const g = parseInt(c.substring(2,4),16);
+    const b = parseInt(c.substring(4,6),16);
+    const lr = Math.round(r + (255-r)*amt);
+    const lg = Math.round(g + (255-g)*amt);
+    const lb = Math.round(b + (255-b)*amt);
+    return '#' + [lr,lg,lb].map(v => v.toString(16).padStart(2,'0')).join('');
+  }
+
+  function easeOutCubic(t) { return 1 - Math.pow(1-t, 3); }
+  let _estAnim = null;
+  function animateValue(el, from, to, fmt) {
+    if (_estAnim) cancelAnimationFrame(_estAnim);
+    const start = performance.now();
+    const dur = 380;
+    function tick(now) {
+      const t = Math.min(1, (now - start) / dur);
+      const v = from + (to - from) * easeOutCubic(t);
+      el.textContent = fmt(v);
+      if (t < 1) _estAnim = requestAnimationFrame(tick);
+    }
+    _estAnim = requestAnimationFrame(tick);
+  }
+
+  let lastEst = 72;
+  let userInteracted = false;
+  function render() {
+    // qty count
+    $('#qtyCount').innerHTML = state.quantity + '<small>pops</small>';
+
+    // theme ribbon color
+    const theme = THEMES[state.theme];
+    const ribbon = $('#prevRibbon');
+    ribbon.querySelectorAll('path').forEach((p, i) => {
+      p.setAttribute('fill', i === 0 ? theme.ribbon : darken(theme.ribbon, 0.18));
+    });
+
+    // pops + sticks: render up to 9 visible, regardless of count
+    const visible = Math.min(9, Math.max(1, Math.ceil(state.quantity / 4)));
+    let sticks = '', pops = '';
+    for (let i = 0; i < visible; i++) {
+      sticks += stickSvg(i);
+      pops   += popSvg(i, visible, state.theme);
+    }
+    $('#prevSticks').innerHTML = sticks;
+    $('#prevPops').innerHTML = pops;
+    $('#prevBadgeNum').textContent = '×' + state.quantity;
+
+    // estimate
+    const flavorObjs = state.flavors.map(k => FLAVORS[k]);
+    const avg = flavorObjs.length ? flavorObjs.reduce((s,f) => s+f.price, 0) / flavorObjs.length : 3;
+    const est = avg * state.quantity;
+    animateValue($('#estVal'), lastEst, est, v => '$' + Math.round(v));
+    lastEst = est;
+    $('#estPer').textContent = `for ${state.quantity} pops`;
+
+    let note = 'Final quote within 48 hours.';
+    if (state.occasion === 'Wedding' && state.quantity < 50) {
+      note = '★ Weddings need a 50-pop minimum — add a few more.';
+    } else if (state.quantity >= 100) {
+      note = '★ Large order — Emmy will personally walk you through it.';
+    } else if (state.flavors.some(k => FLAVORS[k].price > 3.25)) {
+      note = '✿ Includes a premium flavor — minor adjustments may apply.';
+    }
+    $('#estNote').textContent = note;
+
+    // meta
+    $('#metaOcc').textContent = state.occasion;
+    $('#metaFlavors').textContent = state.flavors.length + ' flavor' + (state.flavors.length !== 1 ? 's' : '');
+    $('#metaTheme').textContent = theme.name;
+
+    // mini bar — only after interaction
+    const mb = $('#miniBar');
+    if (userInteracted) mb.classList.add('show');
+    $('#mbCount').textContent = state.quantity + ' ';
+    $('#mbFlavors').textContent = state.flavors.map(k => FLAVORS[k].name.split(' ')[0]).join(', ');
+    $('#mbPrice').textContent = '$' + Math.round(est);
+
+    // build mailto
+    const flavorNames = state.flavors.map(k => FLAVORS[k].name).join(', ');
+    const subject = `Cake pop order — ${state.occasion}, ${state.quantity} pops`;
+    const body = [
+      `Hi Emmy,`,
+      ``,
+      `I'd love to order some cake pops:`,
+      ``,
+      `• Occasion: ${state.occasion}`,
+      `• Quantity: ${state.quantity} pops`,
+      `• Flavors: ${flavorNames}`,
+      `• Theme palette: ${theme.name}`,
+      state.date ? `• Need by: ${state.date}` : null,
+      ``,
+      state.notes ? `Notes:\n${state.notes}` : null,
+      ``,
+      state.name ? `— ${state.name}` : `— (sent from emmyssweettreats.com)`,
+      ``,
+      `(Estimate from the builder: ~$${Math.round(est)}.)`
+    ].filter(Boolean).join('\n');
+    const href = `mailto:hi@emmyssweettreats.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    $('#sendBtn').setAttribute('href', href);
+    $('#mbCta').setAttribute('href', '#order');
+  }
+
+  function darken(hex, amt) {
+    const c = hex.replace('#','');
+    const r = parseInt(c.substring(0,2),16);
+    const g = parseInt(c.substring(2,4),16);
+    const b = parseInt(c.substring(4,6),16);
+    return '#' + [r,g,b].map(v => Math.max(0, Math.round(v*(1-amt))).toString(16).padStart(2,'0')).join('');
+  }
+
+  // initial render
+  render();
+  syncFlavorCards();
+
+  // mark interaction on any builder change
+  ['click','input','change'].forEach(ev => {
+    document.getElementById('bouquetForm').addEventListener(ev, () => {
+      if (!userInteracted) { userInteracted = true; render(); }
+    });
+  });
+  // also reveal mini-bar once user scrolls past flavors section
+  const flavorsSect = document.getElementById('flavors');
+  if (flavorsSect) {
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting && e.boundingClientRect.top < 0) {
+          userInteracted = true;
+          $('#miniBar').classList.add('show');
+        }
+      });
+    }, { threshold: 0 });
+    revealObs.observe(flavorsSect);
+  }
+
+  // little delight: send button → mini sprinkle burst before navigating
+  $('#sendBtn').addEventListener('click', (e) => {
+    burstSprinkles(e.currentTarget);
+  });
+
+  // ============ HERO BOUQUET — gentle mouse parallax ============
+  const heroArt = document.querySelector('.hero-art .bouquet');
+  if (heroArt && window.matchMedia('(pointer:fine)').matches) {
+    let raf = null;
+    document.querySelector('.hero').addEventListener('mousemove', e => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        const rect = heroArt.getBoundingClientRect();
+        const cx = rect.left + rect.width/2;
+        const cy = rect.top + rect.height/2;
+        const dx = (e.clientX - cx) / rect.width;
+        const dy = (e.clientY - cy) / rect.height;
+        heroArt.style.transform = `translate(${dx*-10}px, ${dy*-8}px)`;
+        raf = null;
+      });
+    });
+    document.querySelector('.hero').addEventListener('mouseleave', () => {
+      heroArt.style.transform = '';
+    });
+  }
+</script>
+
+</body>
+</html>
