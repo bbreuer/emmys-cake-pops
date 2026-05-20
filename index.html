@@ -424,6 +424,40 @@
     position: relative;
   }
   .card .illo svg { width: 100%; height: 100%; }
+  .card .illo img.illo-art {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 38%;
+    display: block;
+    filter: saturate(1.02) contrast(1.02);
+    transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .35s ease;
+  }
+  .card:hover .illo img.illo-art { transform: scale(1.04) rotate(-0.4deg); filter: saturate(1.08) contrast(1.04); }
+  .card .illo.illo-photo { background: #FBF6E9; box-shadow: inset 0 0 0 1px rgba(58,39,26,.08); }
+  .card .illo.illo-photo::after {
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(120% 60% at 50% 100%, rgba(58,39,26,.10), transparent 60%),
+      radial-gradient(80% 40% at 50% 0%, rgba(58,39,26,.06), transparent 65%);
+    mix-blend-mode: multiply;
+  }
+  .card .illo .hand-tag {
+    position: absolute;
+    left: 14px; bottom: 12px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: #3A271A;
+    background: rgba(244, 236, 220, .82);
+    border: 1px solid rgba(58, 39, 26, .35);
+    padding: 2px 12px 4px;
+    border-radius: 20px;
+    transform: rotate(-3deg);
+    backdrop-filter: blur(2px);
+    z-index: 2;
+  }
   .card .price {
     position: absolute;
     top: 32px; right: 32px;
@@ -1562,6 +1596,11 @@
               <radialGradient id="popRose"  cx="35%" cy="32%"><stop offset="0%" stop-color="#F1C7C0"/><stop offset="60%" stop-color="#D88B7E"/><stop offset="100%" stop-color="#9C4836"/></radialGradient>
               <radialGradient id="popLav"   cx="35%" cy="32%"><stop offset="0%" stop-color="#E5D7EE"/><stop offset="60%" stop-color="#B8A0CC"/><stop offset="100%" stop-color="#7E6499"/></radialGradient>
               <radialGradient id="popButter" cx="35%" cy="32%"><stop offset="0%" stop-color="#FEEFC0"/><stop offset="60%" stop-color="#EAC270"/><stop offset="100%" stop-color="#A87E2C"/></radialGradient>
+              <!-- circular clips for hand-painted pop images -->
+              <clipPath id="heroClip46"><circle r="46"/></clipPath>
+              <clipPath id="heroClip42"><circle r="42"/></clipPath>
+              <clipPath id="heroClip40"><circle r="40"/></clipPath>
+              <clipPath id="heroClip48"><circle r="48"/></clipPath>
             </defs>
 
             <!-- soft ground shadow -->
@@ -1594,94 +1633,54 @@
               <line x1="250" y1="80"  x2="252" y2="406" stroke="#FBF7EE" stroke-width="1.5"/>
             </g>
 
-            <!-- POPS (back row, smaller / further) -->
-            <!-- top center: ivory bridal with pearls -->
+            <!-- POPS (hand-painted illustrations clipped to circle to drop the gingham background) -->
+
+            <!-- top center: Champagne Pearl, r=46 (cy 0.46, rp 0.32) -->
             <g transform="translate(250 80)">
-              <circle r="46" fill="url(#popVan)" stroke="#3A271A" stroke-width="1.2"/>
-              <circle r="46" fill="url(#sphereSheen)"/>
-              <circle cx="-14" cy="-14" r="6" fill="url(#popHL)"/>
-              <!-- gold pearls -->
-              <circle cx="-18" cy="6" r="3.5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
-              <circle cx="-4" cy="-8" r="3" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
-              <circle cx="12" cy="14" r="3.5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
-              <circle cx="18" cy="-6" r="3" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
-              <circle cx="-12" cy="22" r="3" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
-              <circle cx="22" cy="22" r="3" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
-              <circle cx="0" cy="-22" r="3" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
+              <image href="Champagne_Pearl.png" x="-71.875" y="-66.125" width="143.75" height="143.75"
+                     clip-path="url(#heroClip46)" preserveAspectRatio="xMidYMid slice"/>
+              <circle r="46" fill="none" stroke="#3A271A" stroke-width="1.1" opacity=".7"/>
+              <circle r="46" fill="url(#sphereSheen)" opacity=".35"/>
             </g>
 
-            <!-- top left: pink with white drizzle -->
+            <!-- top left: Strawberry Shortcake, r=42 (cy 0.50, rp 0.30) -->
             <g transform="translate(190 120)">
-              <circle r="42" fill="url(#popPink)" stroke="#3A271A" stroke-width="1.2"/>
-              <!-- drizzle -->
-              <path d="M-32 -10 Q-20 -2 -16 8 Q-8 18 -4 28 Q4 36 8 40" stroke="#FBF7EE" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-              <path d="M-10 -36 Q-2 -22 8 -18 Q18 -10 22 0 Q28 12 32 18" stroke="#FBF7EE" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-              <path d="M14 -28 Q22 -14 30 -8" stroke="#FBF7EE" stroke-width="3" fill="none" stroke-linecap="round"/>
-              <circle r="42" fill="url(#sphereSheen)"/>
-              <circle cx="-12" cy="-14" r="5" fill="url(#popHL)"/>
+              <image href="Strawberry%20Shortcake.png" x="-70" y="-70" width="140" height="140"
+                     clip-path="url(#heroClip42)" preserveAspectRatio="xMidYMid slice"/>
+              <circle r="42" fill="none" stroke="#3A271A" stroke-width="1.1" opacity=".7"/>
+              <circle r="42" fill="url(#sphereSheen)" opacity=".35"/>
             </g>
 
-            <!-- top right: chocolate with sprinkles -->
+            <!-- top right: Double Chocolate Drizzle, r=42 (cy 0.44, rp 0.34) -->
             <g transform="translate(310 120)">
-              <circle r="42" fill="url(#popChoc)" stroke="#3A271A" stroke-width="1.2"/>
-              <!-- rainbow sprinkles -->
-              <rect x="-22" y="-10" width="9" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(20 -17 -8)"/>
-              <rect x="-6" y="-20" width="9" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-30 -1 -18)"/>
-              <rect x="8" y="-12" width="9" height="3" rx="1.5" fill="#EAC270" transform="rotate(40 13 -10)"/>
-              <rect x="-18" y="8" width="9" height="3" rx="1.5" fill="#B8A0CC" transform="rotate(-15 -13 10)"/>
-              <rect x="2" y="2" width="9" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(70 7 4)"/>
-              <rect x="14" y="18" width="9" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-25 19 20)"/>
-              <rect x="-12" y="22" width="9" height="3" rx="1.5" fill="#EAC270" transform="rotate(50 -7 24)"/>
-              <rect x="20" y="-2" width="9" height="3" rx="1.5" fill="#B8A0CC" transform="rotate(15 25 0)"/>
-              <rect x="6" y="-30" width="9" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(80 11 -28)"/>
-              <circle r="42" fill="url(#sphereSheen)"/>
-              <circle cx="-12" cy="-14" r="5" fill="url(#popHL)"/>
+              <image href="Double_Chocolate_Drizzle.png" x="-61.76" y="-54.35" width="123.53" height="123.53"
+                     clip-path="url(#heroClip42)" preserveAspectRatio="xMidYMid slice"/>
+              <circle r="42" fill="none" stroke="#3A271A" stroke-width="1.1" opacity=".7"/>
+              <circle r="42" fill="url(#sphereSheen)" opacity=".35"/>
             </g>
 
-            <!-- left side: mint -->
+            <!-- left side: Cookies & Cream, r=40 (cy 0.44, rp 0.36) -->
             <g transform="translate(135 220)">
-              <circle r="40" fill="url(#popMint)" stroke="#3A271A" stroke-width="1.2"/>
-              <!-- dark chocolate flecks -->
-              <circle cx="-12" cy="-4" r="2.5" fill="#3A271A"/>
-              <circle cx="6" cy="-12" r="2" fill="#3A271A"/>
-              <circle cx="14" cy="8" r="2.5" fill="#3A271A"/>
-              <circle cx="-4" cy="14" r="2" fill="#3A271A"/>
-              <circle cx="-16" cy="10" r="2" fill="#3A271A"/>
-              <circle cx="20" cy="-6" r="2" fill="#3A271A"/>
-              <circle r="40" fill="url(#sphereSheen)"/>
-              <circle cx="-12" cy="-14" r="5" fill="url(#popHL)"/>
+              <image href="Cookies_Cream.png" x="-55.56" y="-48.89" width="111.11" height="111.11"
+                     clip-path="url(#heroClip40)" preserveAspectRatio="xMidYMid slice"/>
+              <circle r="40" fill="none" stroke="#3A271A" stroke-width="1.1" opacity=".7"/>
+              <circle r="40" fill="url(#sphereSheen)" opacity=".35"/>
             </g>
 
-            <!-- right side: butter yellow with pink rosette -->
+            <!-- right side: Red Velvet & Cream Cheese, r=40 (cy 0.46, rp 0.30) -->
             <g transform="translate(365 220)">
-              <circle r="40" fill="url(#popButter)" stroke="#3A271A" stroke-width="1.2"/>
-              <circle r="40" fill="url(#sphereSheen)"/>
-              <!-- rosette on top-left -->
-              <g transform="translate(-12 -16)">
-                <circle r="11" fill="#F2A6B6"/>
-                <path d="M-7 -3 Q0 -10 7 -3 Q10 5 0 6 Q-10 5 -7 -3 Z" fill="#FBD6DD"/>
-                <circle r="3" fill="#C26880"/>
-              </g>
-              <!-- leaf -->
-              <ellipse cx="0" cy="-22" rx="6" ry="3" fill="#5E7253" transform="rotate(-30 0 -22)"/>
-              <circle cx="-15" cy="-18" r="5" fill="url(#popHL)"/>
+              <image href="Red%20Velvet%20and%20Cream%20Cheese.png" x="-66.67" y="-61.33" width="133.33" height="133.33"
+                     clip-path="url(#heroClip40)" preserveAspectRatio="xMidYMid slice"/>
+              <circle r="40" fill="none" stroke="#3A271A" stroke-width="1.1" opacity=".7"/>
+              <circle r="40" fill="url(#sphereSheen)" opacity=".35"/>
             </g>
 
-            <!-- front center: rose with gold leaf -->
+            <!-- front center: Birthday Confetti, r=48 (cy 0.42, rp 0.32) -->
             <g transform="translate(250 180)">
-              <circle r="48" fill="url(#popRose)" stroke="#3A271A" stroke-width="1.2"/>
-              <circle r="48" fill="url(#sphereSheen)"/>
-              <!-- gold leaf flakes -->
-              <path d="M-18 -22 L-10 -18 L-8 -10 Z" fill="#E9B958" opacity=".9"/>
-              <path d="M14 -8 L 24 -4 L 20 6 Z" fill="#E9B958" opacity=".9"/>
-              <path d="M-10 20 L -2 18 L -2 28 Z" fill="#E9B958" opacity=".9"/>
-              <path d="M20 24 L 28 18 L 30 26 Z" fill="#E9B958" opacity=".9"/>
-              <!-- sugar pearls -->
-              <circle cx="6" cy="-22" r="3" fill="#FBF7EE"/>
-              <circle cx="-22" cy="6" r="3" fill="#FBF7EE"/>
-              <circle cx="22" cy="-18" r="2.5" fill="#FBF7EE"/>
-              <circle cx="-14" cy="28" r="2.5" fill="#FBF7EE"/>
-              <circle cx="-12" cy="-16" r="6" fill="url(#popHL)"/>
+              <image href="BIrthday_Cake.png" x="-75" y="-63" width="150" height="150"
+                     clip-path="url(#heroClip48)" preserveAspectRatio="xMidYMid slice"/>
+              <circle r="48" fill="none" stroke="#3A271A" stroke-width="1.1" opacity=".7"/>
+              <circle r="48" fill="url(#sphereSheen)" opacity=".35"/>
             </g>
 
             <!-- decorative falling sprinkles -->
@@ -1742,53 +1741,9 @@
       <article class="card fade-in">
         <span class="corner"></span>
         <span class="price">$3.00</span>
-        <div class="illo">
-          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="bgA" cx="50%" cy="40%" r="80%">
-                <stop offset="0%" stop-color="#FFF1D8"/>
-                <stop offset="100%" stop-color="#E4C088"/>
-              </radialGradient>
-              <radialGradient id="popA" cx="35%" cy="32%">
-                <stop offset="0%" stop-color="#FFF6E1"/>
-                <stop offset="60%" stop-color="#F4DEA8"/>
-                <stop offset="100%" stop-color="#C9A26A"/>
-              </radialGradient>
-            </defs>
-            <rect width="320" height="256" fill="url(#bgA)"/>
-            <!-- soft scattered sprinkles in background -->
-            <g opacity=".5">
-              <rect x="40" y="200" width="10" height="3" rx="1.5" fill="#F2A6B6" transform="rotate(30 45 202)"/>
-              <rect x="60" y="220" width="8" height="3" rx="1.5" fill="#A8D2BB" transform="rotate(-15 64 222)"/>
-              <rect x="270" y="210" width="10" height="3" rx="1.5" fill="#EAC270" transform="rotate(40 275 212)"/>
-              <rect x="240" y="225" width="8" height="3" rx="1.5" fill="#B8A0CC" transform="rotate(-30 244 227)"/>
-            </g>
-            <!-- shadow under pop -->
-            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
-            <!-- stick -->
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
-            <!-- pop sphere -->
-            <circle cx="160" cy="110" r="70" fill="url(#popA)" stroke="#3A271A" stroke-width="1.2"/>
-            <!-- sprinkles on pop -->
-            <g>
-              <rect x="118" y="80" width="12" height="4" rx="2" fill="#F2A6B6" transform="rotate(35 124 82)"/>
-              <rect x="100" y="100" width="12" height="4" rx="2" fill="#A8D2BB" transform="rotate(-20 106 102)"/>
-              <rect x="190" y="80" width="12" height="4" rx="2" fill="#EAC270" transform="rotate(45 196 82)"/>
-              <rect x="200" y="110" width="12" height="4" rx="2" fill="#B8A0CC" transform="rotate(-30 206 112)"/>
-              <rect x="145" y="60" width="12" height="4" rx="2" fill="#F2A6B6" transform="rotate(70 151 62)"/>
-              <rect x="125" y="135" width="12" height="4" rx="2" fill="#A8D2BB" transform="rotate(15 131 137)"/>
-              <rect x="170" y="150" width="12" height="4" rx="2" fill="#EAC270" transform="rotate(-40 176 152)"/>
-              <rect x="195" y="140" width="12" height="4" rx="2" fill="#B8A0CC" transform="rotate(60 201 142)"/>
-              <rect x="110" y="120" width="12" height="4" rx="2" fill="#F2A6B6" transform="rotate(-25 116 122)"/>
-              <rect x="165" y="120" width="12" height="4" rx="2" fill="#A8D2BB" transform="rotate(80 171 122)"/>
-              <rect x="140" y="100" width="12" height="4" rx="2" fill="#EAC270" transform="rotate(45 146 102)"/>
-              <rect x="180" y="55" width="12" height="4" rx="2" fill="#B8A0CC" transform="rotate(-20 186 57)"/>
-            </g>
-            <!-- sheen -->
-            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
-            <circle cx="140" cy="88" r="11" fill="url(#popHL)"/>
-          </svg>
+        <div class="illo illo-photo">
+          <img class="illo-art" src="BIrthday_Cake.png" alt="Hand-illustrated birthday confetti cake pop with rainbow sprinkles on pink gingham" loading="lazy" decoding="async"/>
+          <span class="hand-tag">hand-painted</span>
         </div>
         <h3>Birthday <em>Confetti</em></h3>
         <p>Vanilla cake folded with confetti sprinkles, dipped in white chocolate, finished with rainbow jimmies.</p>
@@ -1803,39 +1758,9 @@
       <article class="card fade-in">
         <span class="corner"></span>
         <span class="price">$3.25</span>
-        <div class="illo">
-          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="bgB" cx="50%" cy="40%" r="80%">
-                <stop offset="0%" stop-color="#F0DCB4"/>
-                <stop offset="100%" stop-color="#B58F5C"/>
-              </radialGradient>
-              <radialGradient id="popB" cx="35%" cy="32%">
-                <stop offset="0%" stop-color="#9C6A3E"/>
-                <stop offset="60%" stop-color="#5C3F1F"/>
-                <stop offset="100%" stop-color="#2E1A0E"/>
-              </radialGradient>
-            </defs>
-            <rect width="320" height="256" fill="url(#bgB)"/>
-            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".22"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
-            <circle cx="160" cy="110" r="70" fill="url(#popB)" stroke="#3A271A" stroke-width="1.2"/>
-            <!-- white chocolate drizzle -->
-            <path d="M95 95 Q108 105 105 120 Q98 138 110 150 Q120 162 116 175"
-                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
-            <path d="M125 50 Q138 70 130 90 Q120 110 140 125 Q160 140 152 160 Q142 175 155 178"
-                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
-            <path d="M180 48 Q175 70 195 80 Q215 92 205 110 Q190 130 210 145 Q225 158 215 172"
-                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
-            <path d="M220 90 Q230 105 220 120 Q210 140 225 155"
-                  stroke="#FBF7EE" stroke-width="5" fill="none" stroke-linecap="round"/>
-            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
-            <circle cx="140" cy="88" r="11" fill="url(#popHL)"/>
-            <!-- gold leaf -->
-            <path d="M195 65 L 208 60 L 210 72 Z" fill="#E9B958"/>
-            <path d="M110 145 L 122 142 L 124 153 Z" fill="#E9B958" opacity=".9"/>
-          </svg>
+        <div class="illo illo-photo">
+          <img class="illo-art" src="Double_Chocolate_Drizzle.png" alt="Hand-illustrated double chocolate drizzle cake pop on cream gingham" loading="lazy" decoding="async"/>
+          <span class="hand-tag">hand-painted</span>
         </div>
         <h3>Double Chocolate <em>Drizzle</em></h3>
         <p>Rich dark chocolate cake dipped in semi-sweet, finished with a hand-piped white chocolate drizzle and gold leaf.</p>
@@ -1850,46 +1775,9 @@
       <article class="card fade-in">
         <span class="corner"></span>
         <span class="price">$3.25</span>
-        <div class="illo">
-          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="bgC" cx="50%" cy="40%" r="80%">
-                <stop offset="0%" stop-color="#FEE1E8"/>
-                <stop offset="100%" stop-color="#E59FB1"/>
-              </radialGradient>
-              <radialGradient id="popC" cx="35%" cy="32%">
-                <stop offset="0%" stop-color="#FBD6DD"/>
-                <stop offset="60%" stop-color="#F2A6B6"/>
-                <stop offset="100%" stop-color="#C26880"/>
-              </radialGradient>
-            </defs>
-            <rect width="320" height="256" fill="url(#bgC)"/>
-            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
-            <circle cx="160" cy="110" r="70" fill="url(#popC)" stroke="#3A271A" stroke-width="1.2"/>
-            <!-- white drip with cherry -->
-            <path d="M100 80 Q115 90 110 110 Q102 130 118 145 L 200 145 Q215 132 210 115 Q200 95 215 78
-                     Q220 70 200 65 Q175 55 155 65 Q130 60 110 70 Q95 75 100 80 Z"
-                  fill="#FBF7EE" opacity=".95"/>
-            <!-- mini strawberry on top -->
-            <g transform="translate(160 55)">
-              <path d="M-12 0 Q-8 20 0 24 Q8 20 12 0 Q6 -3 0 -2 Q-6 -3 -12 0 Z" fill="#9C2E26"/>
-              <circle cx="-4" cy="4" r="1.2" fill="#FBF7EE"/>
-              <circle cx="3" cy="8" r="1.2" fill="#FBF7EE"/>
-              <circle cx="-2" cy="14" r="1.2" fill="#FBF7EE"/>
-              <circle cx="5" cy="16" r="1.2" fill="#FBF7EE"/>
-              <!-- leafy top -->
-              <path d="M-8 -2 L0 -10 L8 -2 L 4 0 L 0 -4 L -4 0 Z" fill="#5E7253"/>
-            </g>
-            <!-- sprinkles -->
-            <circle cx="125" cy="125" r="2.5" fill="#9C2E26"/>
-            <circle cx="180" cy="120" r="2.5" fill="#9C2E26"/>
-            <circle cx="145" cy="140" r="2.5" fill="#9C2E26"/>
-            <circle cx="195" cy="135" r="2.5" fill="#9C2E26"/>
-            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
-            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
-          </svg>
+        <div class="illo illo-photo">
+          <img class="illo-art" src="Strawberry%20Shortcake.png" alt="Hand-illustrated strawberry shortcake cake pop with whipped cream and berry on pink gingham" loading="lazy" decoding="async"/>
+          <span class="hand-tag">hand-painted</span>
         </div>
         <h3>Strawberry <em>Shortcake</em></h3>
         <p>Strawberry-vanilla cake studded with real freeze-dried berries, dipped in pink, crowned with a sugar berry.</p>
@@ -1904,42 +1792,9 @@
       <article class="card fade-in">
         <span class="corner"></span>
         <span class="price">$3.25</span>
-        <div class="illo">
-          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="bgD" cx="50%" cy="40%" r="80%">
-                <stop offset="0%" stop-color="#E8E4D4"/>
-                <stop offset="100%" stop-color="#A39A86"/>
-              </radialGradient>
-              <radialGradient id="popD" cx="35%" cy="32%">
-                <stop offset="0%" stop-color="#FFFFFF"/>
-                <stop offset="55%" stop-color="#EDE6D2"/>
-                <stop offset="100%" stop-color="#A89B7B"/>
-              </radialGradient>
-            </defs>
-            <rect width="320" height="256" fill="url(#bgD)"/>
-            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
-            <circle cx="160" cy="110" r="70" fill="url(#popD)" stroke="#3A271A" stroke-width="1.2"/>
-            <!-- cookie chunks -->
-            <g>
-              <path d="M100 85 L112 78 L122 90 L116 102 L103 100 Z" fill="#2E1A0E"/>
-              <path d="M210 90 L222 86 L228 100 L218 110 L208 102 Z" fill="#2E1A0E"/>
-              <path d="M140 60 L155 56 L160 70 L148 75 Z" fill="#2E1A0E"/>
-              <path d="M125 130 L142 128 L148 140 L135 148 L122 142 Z" fill="#2E1A0E"/>
-              <path d="M180 140 L195 138 L198 152 L185 158 L175 150 Z" fill="#2E1A0E"/>
-              <path d="M165 100 L175 100 L178 110 L170 116 L162 108 Z" fill="#2E1A0E"/>
-              <!-- crumbs -->
-              <circle cx="115" cy="115" r="2" fill="#2E1A0E"/>
-              <circle cx="200" cy="125" r="2" fill="#2E1A0E"/>
-              <circle cx="155" cy="155" r="2" fill="#2E1A0E"/>
-              <circle cx="135" cy="78" r="1.8" fill="#2E1A0E"/>
-              <circle cx="190" cy="65" r="1.8" fill="#2E1A0E"/>
-            </g>
-            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
-            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
-          </svg>
+        <div class="illo illo-photo">
+          <img class="illo-art" src="Cookies_Cream.png" alt="Hand-illustrated cookies and cream cake pop with chocolate drizzle and cookie chunks on cream gingham" loading="lazy" decoding="async"/>
+          <span class="hand-tag">hand-painted</span>
         </div>
         <h3>Cookies &amp; <em>Cream</em></h3>
         <p>Cream-cheese-frosted vanilla cake folded with chocolate sandwich cookies, dipped in white chocolate.</p>
@@ -1954,45 +1809,9 @@
       <article class="card fade-in">
         <span class="corner"></span>
         <span class="price">$4.00</span>
-        <div class="illo">
-          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="bgE" cx="50%" cy="40%" r="80%">
-                <stop offset="0%" stop-color="#F7F0E0"/>
-                <stop offset="100%" stop-color="#C9B58A"/>
-              </radialGradient>
-              <radialGradient id="popE" cx="35%" cy="32%">
-                <stop offset="0%" stop-color="#FFFFFF"/>
-                <stop offset="60%" stop-color="#F4ECD8"/>
-                <stop offset="100%" stop-color="#C9A26A"/>
-              </radialGradient>
-            </defs>
-            <rect width="320" height="256" fill="url(#bgE)"/>
-            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".18"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
-            <circle cx="160" cy="110" r="70" fill="url(#popE)" stroke="#3A271A" stroke-width="1.2"/>
-            <!-- gold pearls (alternating gold + ivory) -->
-            <g>
-              <circle cx="120" cy="90" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="135" cy="75" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="155" cy="68" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="178" cy="72" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="195" cy="85" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="210" cy="100" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="218" cy="120" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="105" cy="110" r="5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="115" cy="135" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="135" cy="155" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="160" cy="165" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="185" cy="160" r="4.5" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="205" cy="145" r="5" fill="#E9B958" stroke="#8B5A1E" stroke-width=".8"/>
-              <circle cx="145" cy="115" r="4" fill="#FBF7EE" stroke="#8B5A1E" stroke-width=".6"/>
-              <circle cx="175" cy="125" r="4" fill="#E9B958" stroke="#8B5A1E" stroke-width=".6"/>
-            </g>
-            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
-            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
-          </svg>
+        <div class="illo illo-photo">
+          <img class="illo-art" src="Champagne_Pearl.png" alt="Hand-illustrated champagne pearl cake pop with ivory pearls and gold drizzle on cream gingham" loading="lazy" decoding="async"/>
+          <span class="hand-tag">hand-painted</span>
         </div>
         <h3>Champagne <em>Pearl</em></h3>
         <p>Champagne-vanilla cake, ivory chocolate dip, edible gold &amp; ivory pearls hand-placed by hand. Wedding favorite.</p>
@@ -2007,43 +1826,9 @@
       <article class="card fade-in">
         <span class="corner"></span>
         <span class="price">$3.25</span>
-        <div class="illo">
-          <svg viewBox="0 0 320 256" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="bgF" cx="50%" cy="40%" r="80%">
-                <stop offset="0%" stop-color="#E8C0BC"/>
-                <stop offset="100%" stop-color="#7E3A35"/>
-              </radialGradient>
-              <radialGradient id="popF" cx="35%" cy="32%">
-                <stop offset="0%" stop-color="#C8736A"/>
-                <stop offset="50%" stop-color="#9C2E26"/>
-                <stop offset="100%" stop-color="#5C1813"/>
-              </radialGradient>
-            </defs>
-            <rect width="320" height="256" fill="url(#bgF)"/>
-            <ellipse cx="160" cy="215" rx="60" ry="6" fill="#3A271A" opacity=".22"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#E8D7B4" stroke-width="6"/>
-            <line x1="160" y1="115" x2="160" y2="240" stroke="#FBF7EE" stroke-width="2"/>
-            <circle cx="160" cy="110" r="70" fill="url(#popF)" stroke="#3A271A" stroke-width="1.2"/>
-            <!-- cream cheese swirl on top -->
-            <g transform="translate(160 60)">
-              <path d="M-22 8 Q-22 -10 0 -10 Q22 -10 22 8 Q22 18 12 18 Q14 6 0 6 Q-14 6 -12 18 Q-22 18 -22 8 Z"
-                    fill="#FBF7EE"/>
-              <path d="M-12 14 Q-12 4 0 4 Q12 4 12 14 Q12 18 6 18 Q8 10 0 10 Q-8 10 -6 18 Q-12 18 -12 14 Z"
-                    fill="#FBF7EE"/>
-              <ellipse cx="0" cy="0" rx="6" ry="3" fill="#FBF7EE"/>
-              <!-- shadow on swirl -->
-              <path d="M-22 8 Q-22 -10 0 -10 Q22 -10 22 8" fill="none" stroke="#E4D4B4" stroke-width="1"/>
-            </g>
-            <!-- red velvet crumbs on white -->
-            <circle cx="148" cy="62" r="1.6" fill="#9C2E26"/>
-            <circle cx="172" cy="58" r="1.4" fill="#9C2E26"/>
-            <circle cx="160" cy="48" r="1.4" fill="#9C2E26"/>
-            <circle cx="155" cy="72" r="1.4" fill="#9C2E26"/>
-            <circle cx="168" cy="72" r="1.4" fill="#9C2E26"/>
-            <circle cx="160" cy="110" r="70" fill="url(#sphereSheen)"/>
-            <circle cx="140" cy="92" r="10" fill="url(#popHL)"/>
-          </svg>
+        <div class="illo illo-photo">
+          <img class="illo-art" src="Red%20Velvet%20and%20Cream%20Cheese.png" alt="Hand-illustrated red velvet and cream cheese cake pop with red drizzle and crumbs on pink gingham" loading="lazy" decoding="async"/>
+          <span class="hand-tag">hand-painted</span>
         </div>
         <h3>Red Velvet &amp; <em>Cream Cheese</em></h3>
         <p>Tender red velvet, cream cheese frosting through the middle, dipped in red and crowned with a tiny cream cheese swirl.</p>
@@ -2705,12 +2490,12 @@
 
   // ============ BUILDER ============
   const FLAVORS = {
-    confetti:  { name: 'Birthday Confetti',  price: 3.00, color: '#F4DEA8', deep: '#C9A26A', accent: '#F2A6B6', deco: 'sprinkles' },
-    choc:      { name: 'Double Chocolate',   price: 3.25, color: '#5C3F1F', deep: '#2E1A0E', accent: '#FBF7EE', deco: 'drizzle' },
-    strawberry:{ name: 'Strawberry Shortcake',price: 3.25, color: '#F2A6B6', deep: '#C26880', accent: '#FBF7EE', deco: 'berry'  },
-    cookies:   { name: 'Cookies & Cream',    price: 3.25, color: '#EDE6D2', deep: '#A89B7B', accent: '#2E1A0E', deco: 'cookie' },
-    champagne: { name: 'Champagne Pearl',    price: 4.00, color: '#F4ECD8', deep: '#C9A26A', accent: '#E9B958', deco: 'pearls' },
-    redvelvet: { name: 'Red Velvet',         price: 3.25, color: '#9C2E26', deep: '#5C1813', accent: '#FBF7EE', deco: 'swirl'  }
+    confetti:  { name: 'Birthday Confetti',  price: 3.00, color: '#F4DEA8', deep: '#C9A26A', accent: '#F2A6B6', deco: 'sprinkles', image: 'BIrthday_Cake.png',                    cy: 0.42, rp: 0.32 },
+    choc:      { name: 'Double Chocolate',   price: 3.25, color: '#5C3F1F', deep: '#2E1A0E', accent: '#FBF7EE', deco: 'drizzle',   image: 'Double_Chocolate_Drizzle.png',         cy: 0.44, rp: 0.34 },
+    strawberry:{ name: 'Strawberry Shortcake',price: 3.25, color: '#F2A6B6', deep: '#C26880', accent: '#FBF7EE', deco: 'berry',     image: 'Strawberry%20Shortcake.png',           cy: 0.50, rp: 0.30 },
+    cookies:   { name: 'Cookies & Cream',    price: 3.25, color: '#EDE6D2', deep: '#A89B7B', accent: '#2E1A0E', deco: 'cookie',    image: 'Cookies_Cream.png',                    cy: 0.44, rp: 0.36 },
+    champagne: { name: 'Champagne Pearl',    price: 4.00, color: '#F4ECD8', deep: '#C9A26A', accent: '#E9B958', deco: 'pearls',    image: 'Champagne_Pearl.png',                  cy: 0.46, rp: 0.32 },
+    redvelvet: { name: 'Red Velvet',         price: 3.25, color: '#9C2E26', deep: '#5C1813', accent: '#FBF7EE', deco: 'swirl',     image: 'Red%20Velvet%20and%20Cream%20Cheese.png', cy: 0.46, rp: 0.30 }
   };
 
   const THEMES = {
@@ -2948,21 +2733,21 @@
     const pos = popPositions[idx];
     const flavors = state.flavors.map(k => FLAVORS[k]);
     const f = flavors[idx % flavors.length];
-    const grad = `popGrad-${idx}`;
+    const clipId = `prevPopClip-${idx}`;
+    // image sized so its painted sphere lands inside the circle clip
+    const w  = pos.r / f.rp;
+    const ix = -w * 0.5;
+    const iy = -w * f.cy;
     return `
       <g transform="translate(${pos.x} ${pos.y})">
         <g class="preview-pop sway-${pos.sway}" style="transform-origin: 0 ${pos.r}px;">
           <defs>
-            <radialGradient id="${grad}" cx="35%" cy="32%" r="65%">
-              <stop offset="0%" stop-color="${lighten(f.color, 0.35)}"/>
-              <stop offset="60%" stop-color="${f.color}"/>
-              <stop offset="100%" stop-color="${f.deep}"/>
-            </radialGradient>
+            <clipPath id="${clipId}"><circle r="${pos.r}"/></clipPath>
           </defs>
-          <circle r="${pos.r}" fill="url(#${grad})" stroke="#3A271A" stroke-width="1.2"/>
-          ${decorate(f.deco, f.color, f.accent, theme)}
-          <circle r="${pos.r}" fill="url(#prevSheen)"/>
-          <circle cx="${-pos.r*0.28}" cy="${-pos.r*0.32}" r="${pos.r*0.18}" fill="url(#prevHL)"/>
+          <image href="${f.image}" x="${ix}" y="${iy}" width="${w}" height="${w}"
+                 clip-path="url(#${clipId})" preserveAspectRatio="xMidYMid slice"/>
+          <circle r="${pos.r}" fill="none" stroke="#3A271A" stroke-width="1.1" opacity=".75"/>
+          <circle r="${pos.r}" fill="url(#prevSheen)" opacity=".35"/>
         </g>
       </g>`;
   }
